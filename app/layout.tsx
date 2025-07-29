@@ -4,6 +4,36 @@ import Providers from '@/components/session-provider'
 import StagewiseWrapper from '@/components/stagewise-wrapper'
 import FloatingGenerationTips from '@/components/floating-generation-tips'
 import '@/lib/error-tracker' // 导入错误追踪器
+import { Orbitron, Space_Grotesk, Exo_2, Fredoka_One } from 'next/font/google'
+
+// 配置Google Fonts
+const fredokaOne = Fredoka_One({
+  weight: ['400'],
+  subsets: ['latin'],
+  variable: '--font-magic',
+  display: 'swap',
+})
+
+const orbitron = Orbitron({
+  weight: ['400', '700', '900'],
+  subsets: ['latin'],
+  variable: '--font-heading',
+  display: 'swap',
+})
+
+const spaceGrotesk = Space_Grotesk({
+  weight: ['300', '400', '500', '600', '700'],
+  subsets: ['latin'],
+  variable: '--font-body',
+  display: 'swap',
+})
+
+const exo2 = Exo_2({
+  weight: ['300', '400', '600', '700', '800'],
+  subsets: ['latin'],
+  variable: '--font-accent',
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://aimagica.ai'),
@@ -36,7 +66,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className="bg-background text-foreground">
+      <head>
+        <link 
+          rel="preload" 
+          href="https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&display=swap" 
+          as="style" 
+          onLoad="this.onload=null;this.rel='stylesheet'"
+        />
+        <noscript>
+          <link 
+            rel="stylesheet" 
+            href="https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&display=swap"
+          />
+        </noscript>
+      </head>
+      <body 
+        className={`bg-background text-foreground ${fredokaOne.variable} ${orbitron.variable} ${spaceGrotesk.variable} ${exo2.variable}`}
+      >
         <Providers>
           {children}
           {/* Stagewise toolbar with error handling wrapper */}

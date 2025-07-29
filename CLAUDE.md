@@ -1,151 +1,165 @@
-# CLAUDE.md - SuperClaude Configuration
+# CLAUDE.md
 
-You are SuperClaude, an enhanced version of Claude optimized for maximum efficiency and capability.
-You should use the following configuration to guide your behavior.
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-## Legend
-@include commands/shared/universal-constants.yml#Universal_Legend
+## Project Overview
 
-## Core Configuration
-@include shared/superclaude-core.yml#Core_Philosophy
+AIMAGICA is a Next.js-based AI art generation platform that specializes in image-to-image transformation. Users can upload sketches/photos and transform them into artwork using various AI models and artistic styles.
 
-## Thinking Modes
-@include commands/shared/flag-inheritance.yml#Universal Flags (All Commands)
+## Key Development Commands
 
-## Introspection Mode
-@include commands/shared/introspection-patterns.yml#Introspection_Mode
-@include shared/superclaude-rules.yml#Introspection_Standards
+### Development
+```bash
+npm run dev                    # Start development server
+npm run build                  # Production build (Vercel)
+npm run build:static          # Static build for Cloudflare Pages
+npm run build:pages           # Build for Cloudflare Pages deployment
+npm run lint                   # Run ESLint
+npm run clean                  # Clean build artifacts and cache
+```
 
-## Advanced Token Economy
-@include shared/superclaude-core.yml#Advanced_Token_Economy
+### Deployment & Testing
+```bash
+npm run deploy:vercel         # Deploy to Vercel
+npm run deploy:pages          # Deploy to Cloudflare Pages
+npm run deploy:cloudflare     # Deploy both Workers and Pages
+npm run preview:pages         # Preview Pages build locally
+npm run verify:vercel         # Verify Vercel deployment
+npm run verify:cloudflare     # Verify Cloudflare deployment
+```
 
-## UltraCompressed Mode Integration
-@include shared/superclaude-core.yml#UltraCompressed_Mode
+### Utility Scripts
+```bash
+npm run download-gallery-images    # Download gallery images
+npm run cache-hero-images          # Cache hero section images
+```
 
-## Code Economy
-@include shared/superclaude-core.yml#Code_Economy
+## Architecture Overview
 
-## Cost & Performance Optimization
-@include shared/superclaude-core.yml#Cost_Performance_Optimization
+### Core Framework
+- **Next.js 14** with App Router architecture
+- **React 18** with client/server components
+- **TypeScript** for type safety
+- **Tailwind CSS** for styling with custom design system
 
-## Intelligent Auto-Activation
-@include shared/superclaude-core.yml#Intelligent_Auto_Activation
+### Authentication & Database
+- **Supabase** for authentication, database, and file storage
+- **NextAuth.js** integration for Google OAuth
+- **Row Level Security (RLS)** policies implemented
+- **Database migrations** in `/migrations` directory
 
-## Task Management
-@include shared/superclaude-core.yml#Task_Management
-@include commands/shared/task-management-patterns.yml#Task_Management_Hierarchy
+### UI Components
+- **Radix UI** components as foundation
+- **Custom UI library** in `/components/ui`
+- **shadcn/ui** design patterns
+- **Framer Motion** for animations
+- **Responsive design** with mobile-first approach
 
-## Performance Standards
-@include shared/superclaude-core.yml#Performance_Standards
-@include commands/shared/compression-performance-patterns.yml#Performance_Baselines
+### Key Features Architecture
 
-## Output Organization
-@include shared/superclaude-core.yml#Output_Organization
+#### Image Generation Pipeline
+1. **Upload Interface** (`/components/generation-interface.tsx`)
+2. **API Processing** (`/app/api/generate/image/route.ts`)
+3. **Progress Tracking** with real-time streaming
+4. **Result Display** with download/sharing options
 
+#### Multi-Platform Deployment
+- **Vercel**: Primary hosting with edge functions
+- **Cloudflare Pages**: Static site generation
+- **Cloudflare Workers**: API endpoints and image processing
 
-## Session Management
-@include shared/superclaude-core.yml#Session_Management
-@include commands/shared/system-config.yml#Session_Settings
+### State Management
+- **Zustand** for global state
+- **React Context** for session management
+- **Custom hooks** for reusable logic (`/hooks` directory)
 
-## Rules & Standards
+### File Organization
 
-### Evidence-Based Standards
-@include shared/superclaude-core.yml#Evidence_Based_Standards
+#### Core Directories
+- `/app` - Next.js App Router pages and API routes
+- `/components` - Reusable React components
+- `/lib` - Utility functions and configurations
+- `/hooks` - Custom React hooks
+- `/types` - TypeScript type definitions
+- `/public` - Static assets and images
 
-### Standards
-@include shared/superclaude-core.yml#Standards
+#### Key Configuration Files
+- `next.config.vercel.mjs` - Vercel-specific configuration
+- `next.config.static.mjs` - Static build configuration
+- `middleware.ts` - Supabase auth middleware
+- `tailwind.config.ts` - Tailwind CSS configuration
 
-### Severity System
-@include commands/shared/quality-patterns.yml#Severity_Levels
-@include commands/shared/quality-patterns.yml#Validation_Sequence
+## Important Implementation Details
 
-### Smart Defaults & Handling
-@include shared/superclaude-rules.yml#Smart_Defaults
+### Environment Variables
+The project requires multiple environment configurations:
+- Supabase credentials for database/auth
+- API keys for AI image generation services
+- Cloudflare R2 storage configuration
+- Google OAuth credentials
 
-### Ambiguity Resolution
-@include shared/superclaude-rules.yml#Ambiguity_Resolution
+### Image Processing
+- Supports multiple AI models (KIE-Flux, Stable Diffusion variants)
+- Real-time progress streaming during generation
+- Image compression and optimization
+- R2 cloud storage for generated images
 
-### Development Practices
-@include shared/superclaude-rules.yml#Development_Practices
+### Database Schema
+Key tables include:
+- `users` - User profiles and subscription data
+- `generated_images` - Image generation records
+- `user_subscriptions` - Payment/subscription management
+- `image_likes` - User favorites system
 
-### Code Generation
-@include shared/superclaude-rules.yml#Code_Generation
+### Security Considerations
+- Row Level Security (RLS) enabled on Supabase
+- API rate limiting and user validation
+- Secure file upload handling
+- Content policy enforcement
 
-### Session Awareness
-@include shared/superclaude-rules.yml#Session_Awareness
+## Development Guidelines
 
-### Action & Command Efficiency
-@include shared/superclaude-rules.yml#Action_Command_Efficiency
+### When Adding New Features
+1. Update database schema via migrations in `/migrations`
+2. Add TypeScript types in `/lib/supabase.ts`
+3. Create API routes following existing patterns
+4. Implement UI components with responsive design
+5. Test across multiple deployment targets
 
-### Project Quality
-@include shared/superclaude-rules.yml#Project_Quality
+### Styling Conventions
+- Use Tailwind utility classes primarily
+- Custom fonts: Fredoka One, Orbitron, Space Grotesk, Exo 2
+- Color scheme: Earthy tones (#2d3e2d, #8b7355, #d4a574, #f5f1e8)
+- Component variants using `class-variance-authority`
 
-### Security Standards
-@include shared/superclaude-rules.yml#Security_Standards
-@include commands/shared/security-patterns.yml#OWASP_Top_10
-@include commands/shared/security-patterns.yml#Validation_Levels
+### API Development
+- Follow REST conventions in `/app/api` routes
+- Implement proper error handling and logging
+- Use streaming responses for long-running operations
+- Validate user permissions on protected routes
 
-### Efficiency Management
-@include shared/superclaude-rules.yml#Efficiency_Management
+### Testing Deployment
+Always test both deployment targets:
+```bash
+npm run build:static && npm run preview:pages    # Test Cloudflare Pages
+npm run build && npm run start                   # Test Vercel build
+```
 
-### Operations Standards
-@include shared/superclaude-rules.yml#Operations_Standards
+## Common Patterns
 
-## Model Context Protocol (MCP) Integration
+### Component Structure
+- Use forwardRef for components that need DOM access
+- Implement proper TypeScript interfaces
+- Follow Radix UI patterns for accessibility
+- Include loading and error states
 
-### MCP Architecture
-@include commands/shared/flag-inheritance.yml#Universal Flags (All Commands)
-@include commands/shared/execution-patterns.yml#Servers
+### Data Fetching
+- Server components for initial data loading
+- Client components for interactive features
+- Custom hooks for reusable data logic
+- Proper error boundaries for fault tolerance
 
-### Server Capabilities Extended
-@include shared/superclaude-mcp.yml#Server_Capabilities_Extended
-
-### Token Economics
-@include shared/superclaude-mcp.yml#Token_Economics
-
-### Workflows
-@include shared/superclaude-mcp.yml#Workflows
-
-### Quality Control
-@include shared/superclaude-mcp.yml#Quality_Control
-
-### Command Integration
-@include shared/superclaude-mcp.yml#Command_Integration
-
-### Error Recovery
-@include shared/superclaude-mcp.yml#Error_Recovery
-
-### Best Practices
-@include shared/superclaude-mcp.yml#Best_Practices
-
-### Session Management
-@include shared/superclaude-mcp.yml#Session_Management
-
-## Cognitive Archetypes (Personas)
-
-### Persona Architecture
-@include commands/shared/flag-inheritance.yml#Universal Flags (All Commands)
-
-### All Personas
-@include shared/superclaude-personas.yml#All_Personas
-
-### Collaboration Patterns
-@include shared/superclaude-personas.yml#Collaboration_Patterns
-
-### Intelligent Activation Patterns
-@include shared/superclaude-personas.yml#Intelligent_Activation_Patterns
-
-### Command Specialization
-@include shared/superclaude-personas.yml#Command_Specialization
-
-### Integration Examples
-@include shared/superclaude-personas.yml#Integration_Examples
-
-### Advanced Features
-@include shared/superclaude-personas.yml#Advanced_Features
-
-### MCP + Persona Integration
-@include shared/superclaude-personas.yml#MCP_Persona_Integration
-
----
-*SuperClaude v2.0.1 | Development framework | Evidence-based methodology | Advanced Claude Code configuration*
+### Responsive Design
+- Mobile-first approach with breakpoint-specific styles
+- Touch-friendly interfaces on mobile
+- Progressive enhancement for desktop features

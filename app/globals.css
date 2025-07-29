@@ -2,16 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-/* 导入适合AI魔法主题的字体 */
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&family=Fredoka+One:wght@400&display=swap');
+/* 字体将通过Next.js字体优化加载，不使用@import */
 
-/* 定义字体变量 */
+/* Cloudflare Pages字体回退支持 */
+@font-face {
+  font-family: 'Fredoka One';
+  src: url('https://fonts.gstatic.com/s/fredokaone/v14/k3kUo8kEI-tA1RRcTZGmTlHGCaen8wf-.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 定义字体变量 - 通过Next.js字体优化加载 */
 :root {
-  --font-heading: 'Orbitron', 'Arial Black', sans-serif; /* 科技感标题字体 */
-  --font-body: 'Space Grotesk', 'SF Pro Display', 'Helvetica Neue', sans-serif; /* 现代正文字体 */
-  --font-accent: 'Exo 2', 'Impact', sans-serif; /* 强调字体 */
-  --font-magic: 'Fredoka One', 'Arial Black', sans-serif; /* 魔法主题字体 */
-  --font-hero: 'Fredoka One', 'Arial Black', sans-serif; /* Hero区域专用字体 */
+  --font-heading: var(--font-heading), 'Arial Black', sans-serif; /* 科技感标题字体 */
+  --font-body: var(--font-body), 'SF Pro Display', 'Helvetica Neue', sans-serif; /* 现代正文字体 */
+  --font-accent: var(--font-accent), 'Impact', sans-serif; /* 强调字体 */
+  --font-magic: var(--font-magic), 'Fredoka One', 'Arial Black', cursive, sans-serif; /* 魔法主题字体 */
+  --font-hero: var(--font-magic), 'Fredoka One', 'Arial Black', cursive, sans-serif; /* Hero区域专用字体 */
 }
 
 @layer base {
@@ -175,19 +183,19 @@
 
 /* Hero区域使用魔法字体 */
 .hero-title, .magic-title {
-  font-family: 'Fredoka One', 'Arial Black', sans-serif;
+  font-family: var(--font-magic) !important;
   font-weight: 400;
   letter-spacing: 0.02em;
 }
 
 .hero-subtitle, .magic-subtitle {
-  font-family: 'Space Grotesk', 'SF Pro Display', 'Helvetica Neue', sans-serif;
+  font-family: var(--font-body) !important;
   font-weight: 400;
   letter-spacing: 0.01em;
 }
 
 .hero-button, .magic-button {
-  font-family: 'Fredoka One', 'Arial Black', sans-serif;
+  font-family: var(--font-magic) !important;
   font-weight: 400;
   letter-spacing: 0.05em;
 }
@@ -197,7 +205,7 @@
   /* 只对特定的魔法主题元素使用Fredoka One */
   .font-magic, .font-hero, .hero-title, .magic-title,
   .hero-button, .magic-button {
-    font-family: 'Fredoka One', 'Arial Black', sans-serif !important;
+    font-family: var(--font-magic) !important;
   }
   
   /* 标题使用科技感字体，提升可读性 */

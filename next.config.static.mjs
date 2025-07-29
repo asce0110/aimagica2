@@ -47,6 +47,7 @@ const nextConfig = {
   // 实验性功能
   experimental: {
     optimizePackageImports: ['lucide-react'],
+    optimizeFonts: true,
     esmExternals: false,
   },
   

@@ -1,0 +1,52 @@
+name = "aimagica-app"
+main = "src/simple-worker.ts"
+compatibility_date = "2024-12-06"
+compatibility_flags = ["nodejs_compat"]
+
+# 绑定配置
+[vars]
+ENVIRONMENT = "production"
+APP_URL = "https://aimagica.app"
+
+# Supabase配置
+NEXT_PUBLIC_SUPABASE_URL = "https://vvrkbpnnlxjqyhmmovro.supabase.co"
+NEXT_PUBLIC_SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZ2cmticG5ubHhqcXlobW1vdnJvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzQ1MzAzNDEsImV4cCI6MjA1MDEwNjM0MX0.WKW3oJWKVJPyS8OJmdMcgqQKhE0jFMGfLxbJFfBq8kU"
+
+# R2存储配置  
+NEXT_PUBLIC_R2_PUBLIC_URL = "https://images.aimagica.ai"
+
+# KV存储绑定 - 暂时禁用
+# [[kv_namespaces]]
+# binding = "CACHE"
+# id = "your-kv-namespace-id"
+# preview_id = "your-preview-kv-namespace-id"
+
+# R2存储绑定 - 暂时禁用
+# [[r2_buckets]]
+# binding = "IMAGES"
+# bucket_name = "aimagica-images"
+# preview_bucket_name = "aimagica-images-preview"
+
+# D1数据库绑定（可选，如果需要边缘数据库）
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "aimagica-db"
+# database_id = "your-d1-database-id"
+
+# 开发环境配置
+[env.development]
+name = "aimagica-app-dev"
+vars = { ENVIRONMENT = "development" }
+
+# 生产环境配置
+[env.production]
+name = "aimagica-app"
+vars = { ENVIRONMENT = "production" }
+
+# Workers配置 - 移除构建命令避免循环
+# [build]
+# command = "npm run build:workers"
+
+# 限制配置 - 免费计划不支持CPU限制
+# [limits]
+# cpu_ms = 30000

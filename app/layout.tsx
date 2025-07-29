@@ -4,11 +4,11 @@ import Providers from '@/components/session-provider'
 import StagewiseWrapper from '@/components/stagewise-wrapper'
 import FloatingGenerationTips from '@/components/floating-generation-tips'
 import '@/lib/error-tracker' // 导入错误追踪器
-import { Orbitron, Space_Grotesk, Exo_2, Fredoka_One } from 'next/font/google'
+import { Orbitron, Space_Grotesk, Exo_2, Fredoka } from 'next/font/google'
 
 // 配置Google Fonts
-const fredokaOne = Fredoka_One({
-  weight: ['400'],
+const fredoka = Fredoka({
+  weight: ['400', '600'],
   subsets: ['latin'],
   variable: '--font-magic',
   display: 'swap',
@@ -67,21 +67,9 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link 
-          rel="preload" 
-          href="https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&display=swap" 
-          as="style" 
-          onLoad="this.onload=null;this.rel='stylesheet'"
-        />
-        <noscript>
-          <link 
-            rel="stylesheet" 
-            href="https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&display=swap"
-          />
-        </noscript>
       </head>
       <body 
-        className={`bg-background text-foreground ${fredokaOne.variable} ${orbitron.variable} ${spaceGrotesk.variable} ${exo2.variable}`}
+        className={`bg-background text-foreground ${fredoka.variable} ${orbitron.variable} ${spaceGrotesk.variable} ${exo2.variable}`}
       >
         <Providers>
           {children}

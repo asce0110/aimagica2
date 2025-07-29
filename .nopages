@@ -1,0 +1,2 @@
+# Disable @cloudflare/next-on-pages automatic build
+# We want to use static export instead

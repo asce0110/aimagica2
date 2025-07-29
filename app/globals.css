@@ -1,0 +1,437 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 导入适合AI魔法主题的字体 */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&family=Fredoka+One:wght@400&display=swap');
+
+/* 定义字体变量 */
+:root {
+  --font-heading: 'Orbitron', 'Arial Black', sans-serif; /* 科技感标题字体 */
+  --font-body: 'Space Grotesk', 'SF Pro Display', 'Helvetica Neue', sans-serif; /* 现代正文字体 */
+  --font-accent: 'Exo 2', 'Impact', sans-serif; /* 强调字体 */
+  --font-magic: 'Fredoka One', 'Arial Black', sans-serif; /* 魔法主题字体 */
+  --font-hero: 'Fredoka One', 'Arial Black', sans-serif; /* Hero区域专用字体 */
+}
+
+@layer base {
+  :root {
+    --background: 220 13% 18%;
+    --foreground: 210 40% 95%;
+    --card: 220 13% 21%;
+    --card-foreground: 210 40% 95%;
+    --popover: 220 13% 21%;
+    --popover-foreground: 210 40% 95%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 220 13% 18%;
+    --secondary: 220 13% 25%;
+    --secondary-foreground: 210 40% 95%;
+    --muted: 220 13% 25%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 220 13% 25%;
+    --accent-foreground: 210 40% 95%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 220 13% 25%;
+    --input: 220 13% 25%;
+    --ring: 222.2 84% 4.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 220 13% 18%;
+    --foreground: 210 40% 95%;
+    --card: 220 13% 21%;
+    --card-foreground: 210 40% 95%;
+    --popover: 220 13% 21%;
+    --popover-foreground: 210 40% 95%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 220 13% 18%;
+    --secondary: 220 13% 25%;
+    --secondary-foreground: 210 40% 95%;
+    --muted: 220 13% 25%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 220 13% 25%;
+    --accent-foreground: 210 40% 95%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 220 13% 25%;
+    --input: 220 13% 25%;
+    --ring: 212.7 26.8% 83.9%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    background-color: #2d3135 !important;
+    color: #f1f1f2 !important;
+    font-family: var(--font-body);
+  }
+  html {
+    background-color: #2d3135 !important;
+  }
+}
+
+/* 隐藏滚动条但保持滚动功能 */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+
+/* 移动端触摸优化 */
+@media (max-width: 768px) {
+  .touch-none {
+    touch-action: none;
+  }
+
+  /* 优化移动端点击区域 */
+  button,
+  .cursor-pointer {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+/* AIMAGICA主题动画 */
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%) skewX(-12deg);
+  }
+  100% {
+    transform: translateX(200%) skewX(-12deg);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(2deg);
+  }
+}
+
+@keyframes wiggle {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(1deg);
+  }
+  75% {
+    transform: rotate(-1deg);
+  }
+}
+
+/* 自定义动画类 */
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-wiggle {
+  animation: wiggle 2s ease-in-out infinite;
+}
+
+/* 字体工具类 */
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+.font-accent {
+  font-family: var(--font-accent);
+}
+
+.font-magic {
+  font-family: var(--font-magic);
+}
+
+.font-hero {
+  font-family: var(--font-hero);
+}
+
+/* 恢复原始字体策略 - 移除强制覆盖 */
+
+/* Hero区域使用魔法字体 */
+.hero-title, .magic-title {
+  font-family: 'Fredoka One', 'Arial Black', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+.hero-subtitle, .magic-subtitle {
+  font-family: 'Space Grotesk', 'SF Pro Display', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+.hero-button, .magic-button {
+  font-family: 'Fredoka One', 'Arial Black', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+
+/* 桌面端字体策略 - 恢复可读性 */
+@media (min-width: 769px) {
+  /* 只对特定的魔法主题元素使用Fredoka One */
+  .font-magic, .font-hero, .hero-title, .magic-title,
+  .hero-button, .magic-button {
+    font-family: 'Fredoka One', 'Arial Black', sans-serif !important;
+  }
+  
+  /* 标题使用科技感字体，提升可读性 */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading) !important;
+    font-weight: 700;
+  }
+  
+  /* 正文使用现代字体，确保可读性 */
+  body, p, span, div, textarea, label, input, select,
+  .font-body, .font-accent {
+    font-family: var(--font-body) !important;
+  }
+  
+  /* 按钮使用适中的字体 */
+  button, .btn, input[type="button"], input[type="submit"] {
+    font-family: var(--font-accent) !important;
+    font-weight: 600;
+  }
+}
+
+/* 移动端字体优化 */
+@media (max-width: 768px) {
+  /* 移动端标题 */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading) !important;
+    font-weight: 700;
+  }
+  
+  /* 移动端正文保持可读性 */
+  body, p, span, div, textarea, label, input, select,
+  .font-body, .font-accent {
+    font-family: var(--font-body) !important;
+  }
+  
+  /* 移动端按钮 */
+  button, .btn, input[type="button"], input[type="submit"] {
+    font-family: var(--font-accent) !important;
+    font-weight: 600;
+  }
+  
+  /* Hero区域移动端优化 */
+  .hero-title {
+    font-size: 2rem;
+    line-height: 1.1;
+    letter-spacing: 0.01em;
+    font-weight: 400 !important;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+    line-height: 1.3;
+    letter-spacing: 0.005em;
+    font-weight: 400 !important;
+  }
+  
+  .hero-button {
+    font-size: 1.1rem;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    font-weight: 600 !important;
+  }
+}
+
+/* Gallery页面保持原有风格 - 使用Comic Sans MS风格 */
+.gallery-page [style*="Comic Sans MS"] {
+  font-family: 'Comic Sans MS', 'Fredoka One', cursive !important;
+}
+
+/* Style Management页面字体优化 */
+.admin-dashboard [style*="Fredoka One"] {
+  font-weight: 600 !important; /* 减轻字重，提升可读性 */
+  letter-spacing: 0.01em;
+}
+
+/* Admin Dashboard强制字体优化 - 确保可读性 */
+.admin-dashboard h1, 
+.admin-dashboard h2, 
+.admin-dashboard h3, 
+.admin-dashboard h4, 
+.admin-dashboard h5, 
+.admin-dashboard h6 {
+  font-family: var(--font-heading) !important;
+  font-weight: 700 !important;
+}
+
+.admin-dashboard p, 
+.admin-dashboard span, 
+.admin-dashboard div:not(.emoji):not(.icon) {
+  font-family: var(--font-body) !important;
+  font-weight: 400 !important;
+}
+
+.admin-dashboard button {
+  font-family: var(--font-accent) !important;
+  font-weight: 600 !important;
+}
+
+/* 确保Admin Dashboard中的文字颜色足够深 - 强制覆盖所有浅色 */
+.admin-dashboard .text-\[\#8b7355\] {
+  color: #2d3e2d !important;
+}
+
+/* 覆盖所有可能的浅色文字 */
+.admin-dashboard [class*="text-[#8b7355]"] {
+  color: #2d3e2d !important;
+}
+
+.admin-dashboard [class*="text-gray"] {
+  color: #2d3e2d !important;
+}
+
+/* 特别针对Style Management页面的描述文字 */
+.admin-dashboard p,
+.admin-dashboard span:not(.emoji),
+.admin-dashboard div:not(.w-):not(.h-):not(.bg-):not(.border-):not(.rounded-):not(.flex):not(.grid):not(.absolute):not(.relative) {
+  color: #2d3e2d !important;
+}
+
+/* 确保标签和描述文字可读 */
+.admin-dashboard label,
+.admin-dashboard .text-sm,
+.admin-dashboard .text-xs {
+  color: #2d3e2d !important;
+  font-weight: 500 !important;
+}
+
+/* Admin Dashboard字体覆盖所有内联样式 */
+.admin-dashboard * {
+  font-family: var(--font-body) !important;
+}
+
+.admin-dashboard h1, 
+.admin-dashboard h2, 
+.admin-dashboard h3, 
+.admin-dashboard h4, 
+.admin-dashboard h5, 
+.admin-dashboard h6,
+.admin-dashboard .text-xl,
+.admin-dashboard .text-2xl,
+.admin-dashboard .text-3xl {
+  font-family: var(--font-heading) !important;
+}
+
+/* 终极强制规则 - 覆盖所有可能的浅色文字 */
+.admin-dashboard * {
+  color: #2d3e2d !important;
+  font-weight: 500 !important;
+}
+
+/* 保留必要的颜色 - 背景、边框等 */
+.admin-dashboard .bg-\[\#d4a574\],
+.admin-dashboard .bg-\[\#8b7355\],
+.admin-dashboard .border-\[\#8b7355\],
+.admin-dashboard .border-\[\#d4a574\] {
+  background-color: initial !important;
+  border-color: initial !important;
+}
+
+/* 按钮和交互元素保持原色 */
+.admin-dashboard button,
+.admin-dashboard .bg-red-500,
+.admin-dashboard .bg-green-500,
+.admin-dashboard .bg-blue-500,
+.admin-dashboard .bg-yellow-500 {
+  color: white !important;
+}
+
+/* 徽章保持原色 */
+.admin-dashboard .bg-\[\#d4a574\] {
+  color: #2d3e2d !important;
+}
+
+/* SUPER FORCE Badge颜色 - 终极强制版本 */
+/* 红色Badge - 强制白色文字 */
+[class*="bg-red-500"],
+[class*="bg-red-500"] *,
+.bg-red-500,
+.bg-red-500 *,
+.admin-dashboard [class*="bg-red-500"],
+.admin-dashboard [class*="bg-red-500"] * {
+  color: white !important;
+  font-weight: 700 !important;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9) !important;
+}
+
+/* 黄色Badge - 强制黑色文字 */
+[class*="bg-yellow-400"],
+[class*="bg-yellow-400"] *,
+.bg-yellow-400,
+.bg-yellow-400 *,
+.admin-dashboard [class*="bg-yellow-400"],
+.admin-dashboard [class*="bg-yellow-400"] * {
+  color: black !important;
+  font-weight: 700 !important;
+  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.9) !important;
+}
+
+/* 绿色Badge - 强制白色文字 */
+[class*="bg-green-500"],
+[class*="bg-green-500"] *,
+.bg-green-500,
+.bg-green-500 *,
+.admin-dashboard [class*="bg-green-500"],
+.admin-dashboard [class*="bg-green-500"] * {
+  color: white !important;
+  font-weight: 700 !important;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9) !important;
+}
+
+/* 金色Badge - 强制深色文字 */
+[class*="d4a574"],
+[class*="d4a574"] *,
+.admin-dashboard [class*="d4a574"],
+.admin-dashboard [class*="d4a574"] * {
+  color: #2d3e2d !important;
+  font-weight: 700 !important;
+  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.9) !important;
+}
+
+/* 针对所有可能的Badge选择器 */
+span[class*="bg-red-500"],
+span[class*="bg-yellow-400"],
+span[class*="bg-green-500"],
+div[class*="bg-red-500"],
+div[class*="bg-yellow-400"],
+div[class*="bg-green-500"] {
+  color: white !important;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8) !important;
+}
+
+span[class*="bg-yellow-400"],
+div[class*="bg-yellow-400"] {
+  color: black !important;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8) !important;
+}
+

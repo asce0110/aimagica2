@@ -1,0 +1,9 @@
+# 禁用Cloudflare Pages自动框架检测，保留构建必需文件
+next.config.*
+vercel.json
+package-lock.json
+pnpm-lock.yaml
+.next/
+tsconfig.json
+tsconfig.*.json
+next-env.d.ts

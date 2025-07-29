@@ -1,0 +1,11 @@
+# 排除备份和禁用的文件
+api-backup-migrate-disabled/
+api-backup/
+out/
+.next/
+node_modules/
+.git/
+
+# 排除构建和缓存文件
+*.tsbuildinfo
+*.cache

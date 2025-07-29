@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(NEXT_CONFIG_FILE=next.config.static.mjs next build)",
+      "WebFetch(domain:production.aimagica.pages.dev)",
+      "Bash(NEXT_CONFIG_FILE=next.config.static.mjs npx next build --no-cache)",
+      "Bash(git remote:*)",
+      "Bash(echo \"准备推送到aimagica2仓库。请先在GitHub上创建仓库，然后我将执行以下命令：\n\ngit push -u origin main\ngit push origin --all     # 推送所有分支\ngit push origin --tags    # 推送所有标签（如果有的话）\n\n当前准备推送的内容包括：\n- 完整的AIMAGICA项目代码\n- 所有最新的功能更新和UI优化  \n- 修复的认证系统和收藏功能\n- 重新设计的admin payment页面\n- 完整的Cloudflare部署配置\")",
+      "Bash(git fetch:*)",
+      "Bash(echo:*)",
+      "WebFetch(domain:aimagica2.pages.dev)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(git log:*)",
+      "WebFetch(domain:github.com)",
+      "Bash(git checkout:*)",
+      "Bash(git stash:*)"
+    ],
+    "deny": []
+  }
+}

@@ -1,0 +1,269 @@
+{
+  "success": true,
+  "count": 8,
+  "models": [
+    {
+      "id": "dalle3-hd",
+      "name": "DALL-E 3 HD",
+      "description": "OpenAI最新的高清图像生成模型，卓越的细节和真实感",
+      "provider": "OpenAI",
+      "model": "dall-e-3",
+      "config": {
+        "max_resolution": "1024x1024",
+        "quality": "hd",
+        "style": "vivid"
+      },
+      "isDefault": true,
+      "displayName": "DALL-E 3 HD (OpenAI)",
+      "shortName": "DALL-E 3",
+      "emoji": "🎨",
+      "pricing": {
+        "per_image": 0.04,
+        "currency": "USD"
+      },
+      "features": ["high_quality", "detailed_prompts", "safe_content"],
+      "limitations": {
+        "max_prompt_length": 4000,
+        "content_policy": "strict"
+      },
+      "is_premium": false,
+      "is_active": true,
+      "sort_order": 1
+    },
+    {
+      "id": "kie-flux-pro",
+      "name": "Kie.ai Flux Pro",
+      "description": "Kie.ai平台的专业级Flux模型，快速高质量生成",
+      "provider": "Kie.ai",
+      "model": "flux-pro-1.1",
+      "config": {
+        "max_resolution": "1152x896",
+        "steps": 25,
+        "guidance_scale": 3.5
+      },
+      "isDefault": false,
+      "displayName": "Flux Pro (Kie.ai)",
+      "shortName": "Flux Pro",
+      "emoji": "⚡",
+      "pricing": {
+        "per_image": 0.025,
+        "currency": "USD"
+      },
+      "features": ["fast_generation", "artistic_styles", "flexible_aspect_ratios"],
+      "limitations": {
+        "max_prompt_length": 2000,
+        "generation_time": "15-30s"
+      },
+      "is_premium": false,
+      "is_active": true,
+      "sort_order": 2
+    },
+    {
+      "id": "sdxl-turbo",
+      "name": "SDXL Turbo",
+      "description": "Stability AI的极速生成模型，1步生成高质量图像",
+      "provider": "Stability AI",
+      "model": "stable-diffusion-xl-1024-v1-0",
+      "config": {
+        "max_resolution": "1024x1024",
+        "steps": 1,
+        "scheduler": "euler_ancestral"
+      },
+      "isDefault": false,
+      "displayName": "SDXL Turbo (Stability AI)",
+      "shortName": "SDXL Turbo",
+      "emoji": "🚀",
+      "pricing": {
+        "per_image": 0.02,
+        "currency": "USD"
+      },
+      "features": ["ultra_fast", "single_step", "consistent_quality"],
+      "limitations": {
+        "max_prompt_length": 1500,
+        "generation_time": "2-5s"
+      },
+      "is_premium": false,
+      "is_active": true,
+      "sort_order": 3
+    },
+    {
+      "id": "flux-dev-replicate",
+      "name": "Flux Dev",
+      "description": "Replicate平台的Flux开发版，开源高性能模型",
+      "provider": "Replicate",
+      "model": "black-forest-labs/flux-dev",
+      "config": {
+        "max_resolution": "1440x1440",
+        "steps": 28,
+        "guidance_scale": 3.5
+      },
+      "isDefault": false,
+      "displayName": "Flux Dev (Replicate)",
+      "shortName": "Flux Dev",
+      "emoji": "🔬",
+      "pricing": {
+        "per_image": 0.015,
+        "currency": "USD"
+      },
+      "features": ["open_source", "customizable", "research_grade"],
+      "limitations": {
+        "max_prompt_length": 2500,
+        "generation_time": "20-40s"
+      },
+      "is_premium": false,
+      "is_active": true,
+      "sort_order": 4
+    },
+    {
+      "id": "midjourney-v6",
+      "name": "Midjourney V6",
+      "description": "最受欢迎的艺术风格AI生成模型，创意无限",
+      "provider": "Midjourney",
+      "model": "midjourney-v6",
+      "config": {
+        "max_resolution": "1024x1024",
+        "stylize": 100,
+        "chaos": 0
+      },
+      "isDefault": false,
+      "displayName": "Midjourney V6 (Artistic)",
+      "shortName": "Midjourney",
+      "emoji": "🎭",
+      "pricing": {
+        "per_image": 0.08,
+        "currency": "USD"
+      },
+      "features": ["artistic_excellence", "style_versatility", "creative_interpretation"],
+      "limitations": {
+        "max_prompt_length": 1000,
+        "content_policy": "artistic"
+      },
+      "is_premium": true,
+      "is_active": true,
+      "sort_order": 5
+    },
+    {
+      "id": "firefly-v3",
+      "name": "Adobe Firefly V3",
+      "description": "Adobe的商业级AI模型，版权安全，专业品质",
+      "provider": "Adobe",
+      "model": "firefly-v3",
+      "config": {
+        "max_resolution": "2048x2048",
+        "style_strength": "medium",
+        "content_type": "photo"
+      },
+      "isDefault": false,
+      "displayName": "Firefly V3 (Adobe)",
+      "shortName": "Firefly",
+      "emoji": "🔥",
+      "pricing": {
+        "per_image": 0.06,
+        "currency": "USD"
+      },
+      "features": ["commercial_safe", "high_resolution", "brand_compliance"],
+      "limitations": {
+        "max_prompt_length": 3000,
+        "content_policy": "commercial"
+      },
+      "is_premium": true,
+      "is_active": true,
+      "sort_order": 6
+    },
+    {
+      "id": "leonardo-v2",
+      "name": "Leonardo AI V2",
+      "description": "专注游戏和概念艺术的AI模型，细节丰富",
+      "provider": "Leonardo.ai",
+      "model": "leonardo-v2-production",
+      "config": {
+        "max_resolution": "1536x1536",
+        "alchemy": true,
+        "photoReal": false
+      },
+      "isDefault": false,
+      "displayName": "Leonardo V2 (Gaming Art)",
+      "shortName": "Leonardo",
+      "emoji": "🎮",
+      "pricing": {
+        "per_image": 0.03,
+        "currency": "USD"
+      },
+      "features": ["gaming_art", "concept_design", "character_creation"],
+      "limitations": {
+        "max_prompt_length": 2000,
+        "generation_time": "10-25s"
+      },
+      "is_premium": false,
+      "is_active": true,
+      "sort_order": 7
+    },
+    {
+      "id": "playground-v3",
+      "name": "Playground V3",
+      "description": "新一代多风格AI模型，支持混合风格生成",
+      "provider": "Playground AI",
+      "model": "playground-v3",
+      "config": {
+        "max_resolution": "1024x1024",
+        "filter": "none",
+        "sampler": "euler_ancestral"
+      },
+      "isDefault": false,
+      "displayName": "Playground V3 (Multi-Style)",
+      "shortName": "Playground",
+      "emoji": "🎪",
+      "pricing": {
+        "per_image": 0.035,
+        "currency": "USD"
+      },
+      "features": ["style_mixing", "filter_options", "community_models"],
+      "limitations": {
+        "max_prompt_length": 1800,
+        "generation_time": "15-30s"
+      },
+      "is_premium": false,
+      "is_active": true,
+      "sort_order": 8
+    }
+  ],
+  "defaultModel": {
+    "id": "dalle3-hd",
+    "name": "DALL-E 3 HD",
+    "provider": "OpenAI",
+    "model": "dall-e-3",
+    "isDefault": true,
+    "displayName": "DALL-E 3 HD (OpenAI)",
+    "shortName": "DALL-E 3"
+  },
+  "metadata": {
+    "total": 8,
+    "active_only": true,
+    "type_filter": "image_generation",
+    "categories": [
+      "realistic",
+      "artistic", 
+      "fast",
+      "premium",
+      "commercial",
+      "gaming",
+      "experimental"
+    ],
+    "providers": [
+      "OpenAI",
+      "Kie.ai", 
+      "Stability AI",
+      "Replicate",
+      "Midjourney",
+      "Adobe",
+      "Leonardo.ai",
+      "Playground AI"
+    ],
+    "pricing_range": {
+      "min": 0.015,
+      "max": 0.08,
+      "currency": "USD"
+    },
+    "last_updated": "2025-07-06T19:35:00Z"
+  }
+}

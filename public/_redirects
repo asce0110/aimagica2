@@ -1,0 +1,6 @@
+# API routes should go to Functions first
+/api/*  /api/:splat  200
+/auth/* /auth/:splat 200
+
+# SPA routing - serve index.html for all other routes that don't match static files
+/*    /index.html   200

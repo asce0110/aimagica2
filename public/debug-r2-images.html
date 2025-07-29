@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>R2 图片直链测试</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; background: #f5f5f5; }
+        .test-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .test-item { 
+            background: white; 
+            border: 2px solid #ddd; 
+            padding: 15px; 
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .test-item h3 { margin: 0 0 10px 0; color: #333; }
+        .test-item img { 
+            max-width: 100%; 
+            height: auto; 
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .error { color: red; font-weight: bold; }
+        .success { color: green; font-weight: bold; }
+        .loading { color: orange; font-weight: bold; }
+        .url-display { 
+            font-size: 12px; 
+            color: #666; 
+            word-break: break-all;
+            margin: 10px 0;
+            background: #f8f8f8;
+            padding: 8px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🔍 R2 存储桶图片直链测试</h1>
+    <p><strong>测试目的：</strong>验证在不翻墙环境下能否正常访问 R2 存储桶的图片</p>
+    
+    <div id="results" class="test-grid"></div>
+
+    <script>
+        // 从静态数据中提取的R2 URL
+        const testImages = [
+            {
+                name: "Japanese Anime Style",
+                url: "https://images.aimagica.ai/gallery/105948948301872216168/1750949808349_Japanese_Anime_Style.png"
+            },
+            {
+                name: "Cyberpunk City",
+                url: "https://images.aimagica.ai/gallery/105948948301872216168/1750862975446_A_cyberpunk_city_with_neon_lig.jpeg"
+            },
+            {
+                name: "Peaceful Zen Garden",
+                url: "https://images.aimagica.ai/gallery/105948948301872216168/1750861881556_A_peaceful_zen_garden_with_che.jpeg"
+            },
+            {
+                name: "Digital Art (TempFile)",
+                url: "https://tempfile.aiquickdraw.com/v/68f5527672694583a3f90d9dbaec819f_0_1750696712.png"
+            }
+        ];
+
+        function createTestItem(test) {
+            const div = document.createElement('div');
+            div.className = 'test-item';
+            
+            const title = document.createElement('h3');
+            title.textContent = test.name;
+            div.appendChild(title);
+            
+            const urlDiv = document.createElement('div');
+            urlDiv.className = 'url-display';
+            urlDiv.textContent = test.url;
+            div.appendChild(urlDiv);
+            
+            const img = document.createElement('img');
+            img.alt = test.name;
+            
+            const status = document.createElement('div');
+            status.textContent = '⏳ 加载中...';
+            status.className = 'loading';
+            
+            const startTime = Date.now();
+            
+            img.onload = () => {
+                const loadTime = Date.now() - startTime;
+                status.textContent = `✅ 加载成功 (${loadTime}ms)`;
+                status.className = 'success';
+                img.src = test.url; // 确保显示
+            };
+            
+            img.onerror = () => {
+                const loadTime = Date.now() - startTime;
+                status.textContent = `❌ 加载失败 (${loadTime}ms) - 可能被墙或链接失效`;
+                status.className = 'error';
+                img.style.display = 'none';
+            };
+            
+            // 开始加载
+            img.src = test.url;
+            
+            div.appendChild(img);
+            div.appendChild(status);
+            
+            return div;
+        }
+
+        const resultsDiv = document.getElementById('results');
+        
+        testImages.forEach(test => {
+            resultsDiv.appendChild(createTestItem(test));
+        });
+
+        // 添加网络环境信息
+        const networkInfo = document.createElement('div');
+        networkInfo.style.cssText = 'margin-top: 30px; padding: 20px; background: white; border-radius: 8px; border: 2px solid #007acc;';
+        networkInfo.innerHTML = `
+            <h2>🌐 网络环境信息</h2>
+            <p><strong>当前域名:</strong> ${window.location.hostname}</p>
+            <p><strong>当前协议:</strong> ${window.location.protocol}</p>
+            <p><strong>用户代理:</strong> ${navigator.userAgent}</p>
+            <p><strong>测试时间:</strong> ${new Date().toLocaleString()}</p>
+        `;
+        document.body.appendChild(networkInfo);
+    </script>
+</body>
+</html>

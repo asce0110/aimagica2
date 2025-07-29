@@ -4,16 +4,9 @@ import Providers from '@/components/session-provider'
 import StagewiseWrapper from '@/components/stagewise-wrapper'
 import FloatingGenerationTips from '@/components/floating-generation-tips'
 import '@/lib/error-tracker' // 导入错误追踪器
-import { Orbitron, Space_Grotesk, Exo_2, Fredoka } from 'next/font/google'
+import { Orbitron, Space_Grotesk, Exo_2 } from 'next/font/google'
 
-// 配置Google Fonts
-const fredoka = Fredoka({
-  weight: ['400', '600'],
-  subsets: ['latin'],
-  variable: '--font-magic',
-  display: 'swap',
-})
-
+// 配置Google Fonts - Fredoka One通过CSS @import加载
 const orbitron = Orbitron({
   weight: ['400', '700', '900'],
   subsets: ['latin'],
@@ -69,7 +62,7 @@ export default function RootLayout({
       <head>
       </head>
       <body 
-        className={`bg-background text-foreground ${fredoka.variable} ${orbitron.variable} ${spaceGrotesk.variable} ${exo2.variable}`}
+        className={`bg-background text-foreground ${orbitron.variable} ${spaceGrotesk.variable} ${exo2.variable}`}
       >
         <Providers>
           {children}

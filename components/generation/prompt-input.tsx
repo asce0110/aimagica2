@@ -85,10 +85,7 @@ export default function PromptInput() {
       <div className="space-y-3">
         <Label
           className="text-[#2d3e2d] font-black text-base transform -rotate-1 hover:rotate-1 hover:scale-105 inline-block transition-all duration-300 cursor-pointer"
-          style={{
-            fontFamily: "Fredoka One, Arial Black, sans-serif",
-            textShadow: "1px 1px 0px #d4a574",
-          }}
+          
         >
           {isOptional ? 
             "Describe Your Vision! (Optional) 💭" : 
@@ -105,8 +102,8 @@ export default function PromptInput() {
                 "Describe how you want to transform your image... (Optional - AI can work with just the image!)" :
                 "A magical forest with glowing mushrooms and fairy lights..."
             }
-            className="border-2 border-[#8b7355] bg-[#f5f1e8] text-[#2d3e2d] placeholder:text-[#8b7355]/70 font-bold resize-none focus:border-[#d4a574] focus:ring-2 focus:ring-[#d4a574]/20 pr-10 py-6"
-            style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+            className="border-2 border-[#8b7355] bg-[#f5f1e8] text-[#2d3e2d] placeholder:text-[#8b7355]/70 font-bold resize-none focus:border-[#d4a574] focus:ring-2 focus:ring-[#d4a574]/20 pr-10 py-6 font-magic"
+            
             rows={7}
           />
           
@@ -115,11 +112,7 @@ export default function PromptInput() {
             <button
               onClick={() => setTextPrompt('')}
               className="absolute top-2 right-2 w-6 h-6 bg-[#8b7355] hover:bg-[#d4a574] text-white rounded-full flex items-center justify-center transition-all duration-200 opacity-0 group-hover:opacity-100 hover:scale-110 shadow-lg"
-              style={{ 
-                fontFamily: "Fredoka One, Arial Black, sans-serif",
-                fontSize: "14px",
-                fontWeight: "bold"
-              }}
+              
               title="Clear text"
             >
               ✕
@@ -131,16 +124,16 @@ export default function PromptInput() {
         <div className="flex gap-2 mt-2">
           <button
             onClick={generateRandomPrompt}
-            className="px-3 py-1 bg-[#d4a574] hover:bg-[#c19660] text-[#2d3e2d] rounded-lg text-xs font-bold transition-all duration-200 transform hover:scale-105 shadow-md"
-            style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+            className="px-3 py-1 bg-[#d4a574] hover:bg-[#c19660] text-[#2d3e2d] rounded-lg text-xs font-bold transition-all duration-200 transform hover:scale-105 shadow-md font-magic"
+            
             title="Generate random prompt"
           >
             🎲 Random
           </button>
           <button
             onClick={() => setTextPrompt('')}
-            className="px-3 py-1 bg-[#8b7355] hover:bg-[#7a6449] text-white rounded-lg text-xs font-bold transition-all duration-200 transform hover:scale-105 shadow-md"
-            style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+            className="px-3 py-1 bg-[#8b7355] hover:bg-[#7a6449] text-white rounded-lg text-xs font-bold transition-all duration-200 transform hover:scale-105 shadow-md font-magic"
+            
             title="Reset text"
           >
             🔄 Reset

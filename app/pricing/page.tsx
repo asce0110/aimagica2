@@ -265,8 +265,8 @@ export default function PricingPage() {
               <Button
                 onClick={() => router.push('/')}
                 variant="ghost"
-                className="text-[#2d3e2d] hover:bg-[#d4a574] hover:text-[#2d3e2d] font-black rounded-2xl transform hover:scale-105 transition-all"
-                style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+                className="text-[#2d3e2d] hover:bg-[#d4a574] hover:text-[#2d3e2d] font-black rounded-2xl transform hover:scale-105 transition-all font-magic"
+                
               >
                 <ChevronLeft className="w-4 h-4 mr-2" />
                 Back to Magic! 🏠
@@ -279,16 +279,13 @@ export default function PricingPage() {
                 <div>
                   <h1
                     className="text-2xl font-black text-[#2d3e2d] transform -rotate-1"
-                    style={{
-                      fontFamily: "Fredoka One, Arial Black, sans-serif",
-                      textShadow: "2px 2px 0px #8b7355",
-                    }}
+                    
                   >
                     AIMAGICA
                   </h1>
                   <p
-                    className="text-sm font-bold text-[#8b7355] transform rotate-1"
-                    style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+                    className="text-sm font-bold text-[#8b7355] transform rotate-1 font-magic"
+                    
                   >
                     Pricing Magic ✨
                   </p>
@@ -298,8 +295,8 @@ export default function PricingPage() {
 
             {/* 联系按钮 */}
             <Button
-              className="bg-[#2d3e2d] hover:bg-[#1a2a1a] text-[#f5f1e8] font-black px-6 py-3 rounded-2xl shadow-lg transform hover:scale-105 transition-all"
-              style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+              className="bg-[#2d3e2d] hover:bg-[#1a2a1a] text-[#f5f1e8] font-black px-6 py-3 rounded-2xl shadow-lg transform hover:scale-105 transition-all font-magic"
+              
             >
               <Mail className="w-4 h-4 mr-2" />
               Contact Magic! 📞
@@ -319,16 +316,13 @@ export default function PricingPage() {
           >
             <h1
               className="text-4xl md:text-6xl lg:text-7xl font-black text-[#2d3e2d] mb-6 transform -rotate-1"
-              style={{
-                fontFamily: "Fredoka One, Arial Black, sans-serif",
-                textShadow: "4px 4px 0px #d4a574, 2px 2px 0px #8b7355",
-              }}
+              
             >
               Choose Your Magic! 🪄
             </h1>
             <p
-              className="text-xl md:text-2xl font-bold text-[#8b7355] max-w-4xl mx-auto mb-8"
-              style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+              className="text-xl md:text-2xl font-bold text-[#8b7355] max-w-4xl mx-auto mb-8 font-magic"
+              
             >
               From free magic to wizard-level powers - find the perfect plan to unleash your creativity! ✨
             </p>
@@ -337,7 +331,7 @@ export default function PricingPage() {
             <div className="flex items-center justify-center space-x-4 mb-8">
               <span
                 className={`font-bold text-lg ${!isAnnual ? 'text-[#2d3e2d]' : 'text-[#8b7355]'}`}
-                style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+                
               >
                 Monthly 📅
               </span>
@@ -355,7 +349,7 @@ export default function PricingPage() {
               </Button>
               <span
                 className={`font-bold text-lg ${isAnnual ? 'text-[#2d3e2d]' : 'text-[#8b7355]'}`}
-                style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+                
               >
                 Annual 🎯
               </span>
@@ -386,8 +380,8 @@ export default function PricingPage() {
               {plan.isPopular && (
                 <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 z-20">
                   <Badge 
-                    className="bg-[#d4a574] text-[#2d3e2d] font-black px-4 py-2 text-sm rounded-2xl shadow-xl border-2 border-[#2d3e2d]"
-                    style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+                    className="bg-[#d4a574] text-[#2d3e2d] font-black px-4 py-2 text-sm rounded-2xl shadow-xl border-2 border-[#2d3e2d] font-magic"
+                    
                   >
                     <Star className="w-4 h-4 mr-1" />
                     MOST POPULAR! 🔥
@@ -399,8 +393,8 @@ export default function PricingPage() {
               {plan.isPremium && (
                 <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 z-20">
                   <Badge 
-                    className="bg-[#2d3e2d] text-[#f5f1e8] font-black px-4 py-2 text-sm rounded-2xl shadow-xl border-2 border-[#d4a574]"
-                    style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+                    className="bg-[#2d3e2d] text-[#f5f1e8] font-black px-4 py-2 text-sm rounded-2xl shadow-xl border-2 border-[#d4a574] font-magic"
+                    
                   >
                     <Crown className="w-4 h-4 mr-1" />
                     ULTIMATE! 👑
@@ -424,16 +418,13 @@ export default function PricingPage() {
                   <div className="text-6xl mb-4">{plan.emoji}</div>
                   <h3
                     className="text-2xl font-black text-[#f5f1e8] mb-2 transform -rotate-1"
-                    style={{
-                      fontFamily: "Fredoka One, Arial Black, sans-serif",
-                      textShadow: "2px 2px 0px rgba(0,0,0,0.3)",
-                    }}
+                    
                   >
                     {plan.name}
                   </h3>
                   <p
-                    className="text-[#f5f1e8] font-bold opacity-90"
-                    style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+                    className="text-[#f5f1e8] font-bold opacity-90 font-magic"
+                    
                   >
                     {plan.description}
                   </p>
@@ -444,25 +435,22 @@ export default function PricingPage() {
                   <div className="mb-4">
                     {plan.originalPrice && (
                       <span
-                        className="text-2xl text-[#8b7355] line-through font-bold mr-2"
-                        style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+                        className="text-2xl text-[#8b7355] line-through font-bold mr-2 font-magic"
+                        
                       >
                         ${isAnnual ? (plan.originalPrice * 12 * 0.5).toFixed(0) : plan.originalPrice}
                       </span>
                     )}
                     <span
                       className="text-5xl font-black"
-                      style={{ 
-                        fontFamily: "Fredoka One, Arial Black, sans-serif",
-                        color: plan.color
-                      }}
+                      
                     >
                       ${plan.price === 0 ? '0' : isAnnual ? (plan.price * 12 * 0.5).toFixed(0) : plan.price}
                     </span>
                     {plan.price > 0 && (
                       <span
-                        className="text-lg text-[#8b7355] font-bold ml-1"
-                        style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+                        className="text-lg text-[#8b7355] font-bold ml-1 font-magic"
+                        
                       >
                         /{isAnnual ? 'year' : plan.period}
                       </span>
@@ -470,8 +458,8 @@ export default function PricingPage() {
                   </div>
                   {plan.price === 0 && (
                     <p
-                      className="text-[#8b7355] font-bold"
-                      style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+                      className="text-[#8b7355] font-bold font-magic"
+                      
                     >
                       {plan.period}
                     </p>
@@ -485,8 +473,8 @@ export default function PricingPage() {
                       <li key={featureIndex} className="flex items-start">
                         <Check className="w-5 h-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
                         <span
-                          className="text-[#2d3e2d] font-bold text-sm"
-                          style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+                          className="text-[#2d3e2d] font-bold text-sm font-magic"
+                          
                         >
                           {feature}
                         </span>
@@ -500,11 +488,7 @@ export default function PricingPage() {
                   <Button
                     onClick={() => handleSelectPlan(plan.id)}
                     className={`w-full font-black py-4 rounded-2xl shadow-lg transform hover:scale-105 transition-all text-lg`}
-                    style={{ 
-                      fontFamily: "Fredoka One, Arial Black, sans-serif",
-                      backgroundColor: plan.buttonColor,
-                      color: plan.id === 'pro' ? '#f5f1e8' : '#f5f1e8'
-                    }}
+                    
                   >
                     {plan.price === 0 ? (
                       <>
@@ -529,16 +513,13 @@ export default function PricingPage() {
           <div className="text-center mb-12">
             <h2
               className="text-4xl md:text-5xl font-black text-[#2d3e2d] mb-6 transform rotate-1"
-              style={{
-                fontFamily: "Fredoka One, Arial Black, sans-serif",
-                textShadow: "3px 3px 0px #d4a574",
-              }}
+              
             >
               Why Choose AIMAGICA? 🌟
             </h2>
             <p
-              className="text-xl font-bold text-[#8b7355] max-w-3xl mx-auto"
-              style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+              className="text-xl font-bold text-[#8b7355] max-w-3xl mx-auto font-magic"
+              
             >
               Join millions of creators who trust AIMAGICA for their magical art journey!
             </p>
@@ -558,16 +539,13 @@ export default function PricingPage() {
                 <div className="text-4xl mb-4 text-center">{feature.icon}</div>
                 <h3
                   className="text-xl font-black text-[#2d3e2d] mb-3 text-center"
-                  style={{
-                    fontFamily: "Fredoka One, Arial Black, sans-serif",
-                    textShadow: "1px 1px 0px #d4a574",
-                  }}
+                  
                 >
                   {feature.title}
                 </h3>
                 <p
-                  className="text-[#8b7355] font-bold text-center"
-                  style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+                  className="text-[#8b7355] font-bold text-center font-magic"
+                  
                 >
                   {feature.description}
                 </p>
@@ -581,10 +559,7 @@ export default function PricingPage() {
           <div className="text-center mb-12">
             <h2
               className="text-4xl md:text-5xl font-black text-[#2d3e2d] mb-6 transform -rotate-1"
-              style={{
-                fontFamily: "Fredoka One, Arial Black, sans-serif",
-                textShadow: "3px 3px 0px #d4a574",
-              }}
+              
             >
               What Magic Users Say! 💬
             </h2>
@@ -607,14 +582,14 @@ export default function PricingPage() {
                   </div>
                   <div>
                     <h4
-                      className="font-black text-[#2d3e2d]"
-                      style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+                      className="font-black text-[#2d3e2d] font-magic"
+                      
                     >
                       {testimonial.name}
                     </h4>
                     <p
-                      className="text-[#8b7355] font-bold text-sm"
-                      style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+                      className="text-[#8b7355] font-bold text-sm font-magic"
+                      
                     >
                       {testimonial.role}
                     </p>
@@ -628,8 +603,8 @@ export default function PricingPage() {
                 </div>
                 
                 <p
-                  className="text-[#2d3e2d] font-bold italic"
-                  style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+                  className="text-[#2d3e2d] font-bold italic font-magic"
+                  
                 >
                   "{testimonial.content}"
                 </p>
@@ -654,16 +629,13 @@ export default function PricingPage() {
               <div className="text-6xl mb-6">🎉</div>
               <h2
                 className="text-4xl md:text-5xl font-black text-[#f5f1e8] mb-6 transform rotate-1"
-                style={{
-                  fontFamily: "Fredoka One, Arial Black, sans-serif",
-                  textShadow: "3px 3px 0px rgba(0,0,0,0.3)",
-                }}
+                
               >
                 Ready to Create Magic? ✨
               </h2>
               <p
-                className="text-xl font-bold text-[#f5f1e8] mb-8 max-w-2xl mx-auto opacity-90"
-                style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+                className="text-xl font-bold text-[#f5f1e8] mb-8 max-w-2xl mx-auto opacity-90 font-magic"
+                
               >
                 Join millions of artists who've discovered the magic of AIMAGICA! Start your creative journey today! 🚀
               </p>
@@ -671,8 +643,8 @@ export default function PricingPage() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <Button
                   onClick={() => handleSelectPlan('free')}
-                  className="bg-[#f5f1e8] hover:bg-[#d4a574] text-[#2d3e2d] font-black px-8 py-4 rounded-2xl shadow-xl transform hover:scale-110 transition-all text-lg"
-                  style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+                  className="bg-[#f5f1e8] hover:bg-[#d4a574] text-[#2d3e2d] font-black px-8 py-4 rounded-2xl shadow-xl transform hover:scale-110 transition-all text-lg font-magic"
+                  
                 >
                   <Gift className="w-5 h-5 mr-2" />
                   Start Free! 🎁
@@ -680,8 +652,8 @@ export default function PricingPage() {
                 
                 <Button
                   onClick={() => handleSelectPlan('pro')}
-                  className="bg-[#d4a574] hover:bg-[#c19660] text-[#2d3e2d] font-black px-8 py-4 rounded-2xl shadow-xl transform hover:scale-110 transition-all text-lg border-2 border-[#f5f1e8]"
-                  style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+                  className="bg-[#d4a574] hover:bg-[#c19660] text-[#2d3e2d] font-black px-8 py-4 rounded-2xl shadow-xl transform hover:scale-110 transition-all text-lg border-2 border-[#f5f1e8] font-magic"
+                  
                 >
                   <Crown className="w-5 h-5 mr-2" />
                   Go Pro! 👑
@@ -689,8 +661,8 @@ export default function PricingPage() {
               </div>
               
               <p
-                className="text-[#f5f1e8] font-bold mt-6 opacity-80"
-                style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+                className="text-[#f5f1e8] font-bold mt-6 opacity-80 font-magic"
+                
               >
                 No credit card required for free plan! Cancel anytime! 🔒
               </p>
@@ -708,18 +680,15 @@ export default function PricingPage() {
             </div>
             <h3
               className="text-2xl font-black transform -rotate-1"
-              style={{
-                fontFamily: "Fredoka One, Arial Black, sans-serif",
-                textShadow: "2px 2px 0px #8b7355",
-              }}
+              
             >
               AIMAGICA
             </h3>
           </div>
           
           <p
-            className="text-[#d4a574] font-bold mb-6"
-            style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+            className="text-[#d4a574] font-bold mb-6 font-magic"
+            
           >
             Creating magic, one sketch at a time! ✨
           </p>
@@ -727,30 +696,30 @@ export default function PricingPage() {
           <div className="flex justify-center space-x-6 mb-6">
             <Button
               variant="ghost"
-              className="text-[#f5f1e8] hover:bg-[#d4a574] hover:text-[#2d3e2d] font-bold"
-              style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+              className="text-[#f5f1e8] hover:bg-[#d4a574] hover:text-[#2d3e2d] font-bold font-magic"
+              
             >
               Terms 📋
             </Button>
             <Button
               variant="ghost"
-              className="text-[#f5f1e8] hover:bg-[#d4a574] hover:text-[#2d3e2d] font-bold"
-              style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+              className="text-[#f5f1e8] hover:bg-[#d4a574] hover:text-[#2d3e2d] font-bold font-magic"
+              
             >
               Privacy 🔒
             </Button>
             <Button
               variant="ghost"
-              className="text-[#f5f1e8] hover:bg-[#d4a574] hover:text-[#2d3e2d] font-bold"
-              style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+              className="text-[#f5f1e8] hover:bg-[#d4a574] hover:text-[#2d3e2d] font-bold font-magic"
+              
             >
               Support 💪
             </Button>
           </div>
           
           <p
-            className="text-[#8b7355] font-bold text-sm"
-            style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+            className="text-[#8b7355] font-bold text-sm font-magic"
+            
           >
             © 2024 AIMAGICA. All magical rights reserved! 🪄
           </p>

@@ -115,16 +115,13 @@ export default function VideoCreationPage() {
                 <div>
                   <h1
                     className="text-lg md:text-xl font-black text-white transform -rotate-1"
-                    style={{
-                      fontFamily: "Fredoka One, Arial Black, sans-serif",
-                      textShadow: "2px 2px 0px #333",
-                    }}
+                    
                   >
                     AIMAGICA
                   </h1>
                   <p
-                    className="text-xs text-gray-400 transform rotate-1"
-                    style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+                    className="text-xs text-gray-400 transform rotate-1 font-magic"
+                    
                   >
                     Video Studio 🎬
                   </p>
@@ -136,8 +133,8 @@ export default function VideoCreationPage() {
                 <Button
                   onClick={() => router.push("/")}
                   variant="ghost"
-                  className="text-white hover:bg-white/10 font-black rounded-xl px-4 py-2 transform hover:scale-105 transition-all"
-                  style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+                  className="text-white hover:bg-white/10 font-black rounded-xl px-4 py-2 transform hover:scale-105 transition-all font-magic"
+                  
                 >
                   HOME 🏠
                 </Button>
@@ -145,24 +142,24 @@ export default function VideoCreationPage() {
                 <Button
                   onClick={() => router.push("/gallery")}
                   variant="ghost"
-                  className="text-white hover:bg-white/10 font-black rounded-xl px-4 py-2 transform hover:scale-105 transition-all"
-                  style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+                  className="text-white hover:bg-white/10 font-black rounded-xl px-4 py-2 transform hover:scale-105 transition-all font-magic"
+                  
                 >
                   GALLERY 🖼️
                 </Button>
 
                 <Button
                   variant="ghost"
-                  className="text-[#d4a574] hover:bg-white/10 font-black rounded-xl px-4 py-2 transform hover:scale-105 transition-all border-b-2 border-[#d4a574]"
-                  style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+                  className="text-[#d4a574] hover:bg-white/10 font-black rounded-xl px-4 py-2 transform hover:scale-105 transition-all border-b-2 border-[#d4a574] font-magic"
+                  
                 >
                   VIDEO STUDIO 🎬
                 </Button>
 
                 <Button
                   variant="ghost"
-                  className="text-white hover:bg-white/10 font-black rounded-xl px-4 py-2 transform hover:scale-105 transition-all"
-                  style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+                  className="text-white hover:bg-white/10 font-black rounded-xl px-4 py-2 transform hover:scale-105 transition-all font-magic"
+                  
                 >
                   LEARN 📚
                 </Button>
@@ -171,8 +168,8 @@ export default function VideoCreationPage() {
               {/* PRO按钮和移动菜单 */}
               <div className="flex items-center space-x-3">
                 <Button
-                  className="bg-[#d4a574] hover:bg-[#c19660] text-black font-black px-3 py-2 rounded-xl shadow-lg transform hover:rotate-1 hover:scale-105 transition-all text-xs md:text-sm"
-                  style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+                  className="bg-[#d4a574] hover:bg-[#c19660] text-black font-black px-3 py-2 rounded-xl shadow-lg transform hover:rotate-1 hover:scale-105 transition-all text-xs md:text-sm font-magic"
+                  
                 >
                   <Crown className="w-3 h-3 md:w-4 md:h-4 mr-1 md:mr-2" />
                   PRO
@@ -199,8 +196,8 @@ export default function VideoCreationPage() {
                       setShowMobileMenu(false)
                     }}
                     variant="ghost"
-                    className="text-white hover:bg-white/10 font-black rounded-xl px-4 py-3 text-left justify-start transform hover:scale-105 transition-all"
-                    style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+                    className="text-white hover:bg-white/10 font-black rounded-xl px-4 py-3 text-left justify-start transform hover:scale-105 transition-all font-magic"
+                    
                   >
                     <SparklesIcon className="w-4 h-4 mr-3" />
                     HOME 🏠
@@ -212,8 +209,8 @@ export default function VideoCreationPage() {
                       setShowMobileMenu(false)
                     }}
                     variant="ghost"
-                    className="text-white hover:bg-white/10 font-black rounded-xl px-4 py-3 text-left justify-start transform hover:scale-105 transition-all"
-                    style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+                    className="text-white hover:bg-white/10 font-black rounded-xl px-4 py-3 text-left justify-start transform hover:scale-105 transition-all font-magic"
+                    
                   >
                     <Eye className="w-4 h-4 mr-3" />
                     GALLERY 🖼️
@@ -221,8 +218,8 @@ export default function VideoCreationPage() {
 
                   <Button
                     variant="ghost"
-                    className="text-[#d4a574] hover:bg-white/10 font-black rounded-xl px-4 py-3 text-left justify-start transform hover:scale-105 transition-all border-l-4 border-[#d4a574]"
-                    style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+                    className="text-[#d4a574] hover:bg-white/10 font-black rounded-xl px-4 py-3 text-left justify-start transform hover:scale-105 transition-all border-l-4 border-[#d4a574] font-magic"
+                    
                   >
                     <MessageCircle className="w-4 h-4 mr-3" />
                     VIDEO STUDIO 🎬
@@ -230,8 +227,8 @@ export default function VideoCreationPage() {
 
                   <Button
                     variant="ghost"
-                    className="text-white hover:bg-white/10 font-black rounded-xl px-4 py-3 text-left justify-start transform hover:scale-105 transition-all"
-                    style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+                    className="text-white hover:bg-white/10 font-black rounded-xl px-4 py-3 text-left justify-start transform hover:scale-105 transition-all font-magic"
+                    
                   >
                     <Star className="w-4 h-4 mr-3" />
                     LEARN 📚
@@ -247,16 +244,13 @@ export default function VideoCreationPage() {
           <div className="text-center mb-8 md:mb-12">
             <h1
               className="text-3xl md:text-5xl lg:text-6xl font-black text-[#2d3e2d] mb-4 transform -rotate-1"
-              style={{
-                fontFamily: "Fredoka One, Arial Black, sans-serif",
-                textShadow: "3px 3px 0px #d4a574",
-              }}
+              
             >
               AIMAGICA VIDEO STUDIO 🎬
             </h1>
             <p
-              className="text-lg md:text-2xl font-bold text-[#8b7355] max-w-3xl mx-auto"
-              style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+              className="text-lg md:text-2xl font-bold text-[#8b7355] max-w-3xl mx-auto font-magic"
+              
             >
               将你的创意转变为令人惊叹的视频，只需几秒钟！
             </p>
@@ -281,8 +275,8 @@ export default function VideoCreationPage() {
             <TabsList className="grid w-full grid-cols-3 bg-[#2d3e2d] rounded-2xl md:rounded-3xl p-2 md:p-3 shadow-xl">
               <TabsTrigger
                 value="create"
-                className="rounded-xl md:rounded-2xl font-black data-[state=active]:bg-[#d4a574] data-[state=active]:text-[#2d3e2d] data-[state=active]:shadow-lg text-[#f5f1e8] transform hover:scale-105 transition-all text-xs md:text-sm"
-                style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+                className="rounded-xl md:rounded-2xl font-black data-[state=active]:bg-[#d4a574] data-[state=active]:text-[#2d3e2d] data-[state=active]:shadow-lg text-[#f5f1e8] transform hover:scale-105 transition-all text-xs md:text-sm font-magic"
+                
               >
                 <Film className="w-3 h-3 md:w-4 md:h-4 mr-1 md:mr-2" />
                 CREATE! 🎬
@@ -291,7 +285,7 @@ export default function VideoCreationPage() {
                 value="rendering"
                 className="rounded-xl md:rounded-2xl font-black data-[state=active]:bg-[#d4a574] data-[state=active]:text-[#2d3e2d] data-[state=active]:shadow-lg text-[#f5f1e8] transform hover:scale-105 transition-all text-xs md:text-sm"
                 disabled={!isRendering}
-                style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+                
               >
                 <ImageIcon className="w-3 h-3 md:w-4 md:h-4 mr-1 md:mr-2" />
                 MAGIC! ✨
@@ -300,7 +294,7 @@ export default function VideoCreationPage() {
                 value="result"
                 className="rounded-xl md:rounded-2xl font-black data-[state=active]:bg-[#d4a574] data-[state=active]:text-[#2d3e2d] data-[state=active]:shadow-lg text-[#f5f1e8] transform hover:scale-105 transition-all text-xs md:text-sm"
                 disabled={!generatedVideo}
-                style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+                
               >
                 <Film className="w-3 h-3 md:w-4 md:h-4 mr-1 md:mr-2" />
                 DONE! 🎉
@@ -315,8 +309,8 @@ export default function VideoCreationPage() {
                       variant="outline"
                       className="bg-white/80 border-2 border-[#8b7355] text-[#2d3e2d] hover:bg-[#d4a574]/20 rounded-xl"
                     >
-                      <ArrowLeft className="w-4 h-4 mr-2" />
-                      <span className="font-bold" style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}>
+                      <ArrowLeft className="w-4 h-4 mr-2 font-magic" />
+                      <span className="font-bold" >
                         Back to Home
                       </span>
                     </Button>
@@ -332,16 +326,13 @@ export default function VideoCreationPage() {
                     <div className="absolute -bottom-1 -left-1 md:-bottom-2 md:-left-2 w-3 h-3 md:w-6 md:h-6 bg-[#8b7355] rounded-full"></div>
                     <h2
                       className="text-xl md:text-3xl font-black text-[#f5f1e8] mb-2 transform -rotate-1"
-                      style={{
-                        fontFamily: "Fredoka One, Arial Black, sans-serif",
-                        textShadow: "2px 2px 0px #8b7355",
-                      }}
+                      
                     >
                       CREATING YOUR MAGIC VIDEO! 🎬
                     </h2>
                     <p
-                      className="text-[#f5f1e8] font-bold text-sm md:text-base"
-                      style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+                      className="text-[#f5f1e8] font-bold text-sm md:text-base font-magic"
+                      
                     >
                       Our AI wizards are working hard to bring your vision to life! ✨
                     </p>
@@ -352,8 +343,8 @@ export default function VideoCreationPage() {
                     </div>
                     <div className="mt-4 text-center">
                       <p
-                        className="text-[#8b7355] font-bold text-sm md:text-base"
-                        style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+                        className="text-[#8b7355] font-bold text-sm md:text-base font-magic"
+                        
                       >
                         Video creation takes a bit longer than images. Thanks for your patience! 🙏
                       </p>
@@ -369,16 +360,13 @@ export default function VideoCreationPage() {
                     <div className="absolute -bottom-1 -left-1 md:-bottom-2 md:-left-2 w-3 h-3 md:w-6 md:h-6 bg-[#8b7355] rounded-full"></div>
                     <h2
                       className="text-xl md:text-3xl font-black text-[#2d3e2d] mb-2 transform -rotate-1"
-                      style={{
-                        fontFamily: "Fredoka One, Arial Black, sans-serif",
-                        textShadow: "2px 2px 0px #f5f1e8",
-                      }}
+                      
                     >
                       YOUR AIMAGICA VIDEO IS READY! 🎉
                     </h2>
                     <p
-                      className="text-sm md:text-base text-[#2d3e2d] font-bold"
-                      style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+                      className="text-sm md:text-base text-[#2d3e2d] font-bold font-magic"
+                      
                     >
                       The magic worked! Share your amazing creation! 🚀
                     </p>
@@ -400,16 +388,16 @@ export default function VideoCreationPage() {
                           <div className="flex flex-wrap gap-2 md:gap-3">
                             <Button
                               variant="outline"
-                              className="bg-[#f5f1e8] border-2 md:border-4 border-[#8b7355] text-[#2d3e2d] hover:bg-[#8b7355] hover:text-[#f5f1e8] font-black rounded-xl md:rounded-2xl transform hover:rotate-1 transition-all text-xs md:text-sm px-3 py-2"
-                              style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+                              className="bg-[#f5f1e8] border-2 md:border-4 border-[#8b7355] text-[#2d3e2d] hover:bg-[#8b7355] hover:text-[#f5f1e8] font-black rounded-xl md:rounded-2xl transform hover:rotate-1 transition-all text-xs md:text-sm px-3 py-2 font-magic"
+                              
                             >
                               <Heart className="w-3 h-3 md:w-4 md:h-4 mr-1 md:mr-2" />
                               LOVE IT! ❤️
                             </Button>
                             <Button
                               variant="outline"
-                              className="bg-[#f5f1e8] border-2 md:border-4 border-[#8b7355] text-[#2d3e2d] hover:bg-[#8b7355] hover:text-[#f5f1e8] font-black rounded-xl md:rounded-2xl transform hover:rotate-1 transition-all text-xs md:text-sm px-3 py-2"
-                              style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+                              className="bg-[#f5f1e8] border-2 md:border-4 border-[#8b7355] text-[#2d3e2d] hover:bg-[#8b7355] hover:text-[#f5f1e8] font-black rounded-xl md:rounded-2xl transform hover:rotate-1 transition-all text-xs md:text-sm px-3 py-2 font-magic"
+                              
                             >
                               <Share2 className="w-3 h-3 md:w-4 md:h-4 mr-1 md:mr-2" />
                               SHARE 📤
@@ -418,15 +406,15 @@ export default function VideoCreationPage() {
                           <div className="flex flex-wrap gap-2 md:gap-3">
                             <Button
                               variant="outline"
-                              className="bg-[#f5f1e8] border-2 md:border-4 border-[#8b7355] text-[#2d3e2d] hover:bg-[#8b7355] hover:text-[#f5f1e8] font-black rounded-xl md:rounded-2xl transform hover:rotate-1 transition-all text-xs md:text-sm px-3 py-2"
-                              style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+                              className="bg-[#f5f1e8] border-2 md:border-4 border-[#8b7355] text-[#2d3e2d] hover:bg-[#8b7355] hover:text-[#f5f1e8] font-black rounded-xl md:rounded-2xl transform hover:rotate-1 transition-all text-xs md:text-sm px-3 py-2 font-magic"
+                              
                             >
                               <Download className="w-3 h-3 md:w-4 md:h-4 mr-1 md:mr-2" />
                               FREE DL 📥
                             </Button>
                             <Button
-                              className="bg-[#d4a574] hover:bg-[#c19660] text-[#2d3e2d] font-black rounded-xl md:rounded-2xl shadow-lg transform hover:scale-105 transition-all text-xs md:text-sm px-3 py-2"
-                              style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+                              className="bg-[#d4a574] hover:bg-[#c19660] text-[#2d3e2d] font-black rounded-xl md:rounded-2xl shadow-lg transform hover:scale-105 transition-all text-xs md:text-sm px-3 py-2 font-magic"
+                              
                             >
                               <Film className="w-3 h-3 md:w-4 md:h-4 mr-1 md:mr-2" />
                               HD VIDEO 💎
@@ -448,16 +436,13 @@ export default function VideoCreationPage() {
             <div className="text-center mb-10 md:mb-16">
               <h2
                 className="text-3xl md:text-4xl lg:text-5xl font-black text-[#2d3e2d] mb-4 transform -rotate-1"
-                style={{
-                  fontFamily: "Fredoka One, Arial Black, sans-serif",
-                  textShadow: "3px 3px 0px #d4a574",
-                }}
+                
               >
                 AIMAGICA 视频魔法特色 ✨
               </h2>
               <p
-                className="text-lg md:text-xl font-bold text-[#8b7355] max-w-3xl mx-auto"
-                style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+                className="text-lg md:text-xl font-bold text-[#8b7355] max-w-3xl mx-auto font-magic"
+                
               >
                 探索我们强大的AI视频创作功能，让你的创意栩栩如生！
               </p>
@@ -474,14 +459,11 @@ export default function VideoCreationPage() {
                 </div>
                 <h3
                   className="text-xl font-black text-[#2d3e2d] mb-2"
-                  style={{
-                    fontFamily: "Fredoka One, Arial Black, sans-serif",
-                    textShadow: "1px 1px 0px #d4a574",
-                  }}
+                  
                 >
                   文本到视频 📝
                 </h3>
-                <p className="text-[#8b7355] font-bold" style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}>
+                <p className="text-[#8b7355] font-bold" >
                   只需描述你的创意，AI就能将你的文字转化为生动的视频。从奇幻场景到现实生活，一切皆有可能！
                 </p>
               </div>
@@ -496,14 +478,11 @@ export default function VideoCreationPage() {
                 </div>
                 <h3
                   className="text-xl font-black text-[#2d3e2d] mb-2"
-                  style={{
-                    fontFamily: "Fredoka One, Arial Black, sans-serif",
-                    textShadow: "1px 1px 0px #d4a574",
-                  }}
+                  
                 >
                   图像到视频 🖼️
                 </h3>
-                <p className="text-[#8b7355] font-bold" style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}>
+                <p className="text-[#8b7355] font-bold" >
                   上传你的静态图像，让它们动起来！为你的照片、插图或艺术作品注入生命，创造令人惊叹的动态效果。
                 </p>
               </div>
@@ -518,14 +497,11 @@ export default function VideoCreationPage() {
                 </div>
                 <h3
                   className="text-xl font-black text-[#2d3e2d] mb-2"
-                  style={{
-                    fontFamily: "Fredoka One, Arial Black, sans-serif",
-                    textShadow: "1px 1px 0px #d4a574",
-                  }}
+                  
                 >
                   多种视频风格 🎭
                 </h3>
-                <p className="text-[#8b7355] font-bold" style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}>
+                <p className="text-[#8b7355] font-bold" >
                   从电影级画面到动漫风格，从3D卡通到水彩动画，多种视频风格任你选择，让你的创作独具特色！
                 </p>
               </div>
@@ -540,14 +516,11 @@ export default function VideoCreationPage() {
                 </div>
                 <h3
                   className="text-xl font-black text-[#2d3e2d] mb-2"
-                  style={{
-                    fontFamily: "Fredoka One, Arial Black, sans-serif",
-                    textShadow: "1px 1px 0px #d4a574",
-                  }}
+                  
                 >
                   快速生成 ⚡
                 </h3>
-                <p className="text-[#8b7355] font-bold" style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}>
+                <p className="text-[#8b7355] font-bold" >
                   无需等待数小时！我们的AI技术能在几分钟内生成高质量视频，让你的创意立即成为现实。
                 </p>
               </div>
@@ -565,16 +538,13 @@ export default function VideoCreationPage() {
             <div className="text-center mb-10 md:mb-16">
               <h2
                 className="text-3xl md:text-4xl lg:text-5xl font-black text-[#f5f1e8] mb-4 transform rotate-1"
-                style={{
-                  fontFamily: "Fredoka One, Arial Black, sans-serif",
-                  textShadow: "3px 3px 0px #8b7355",
-                }}
+                
               >
                 视频魔法如何运作 🪄
               </h2>
               <p
-                className="text-lg md:text-xl font-bold text-[#d4a574] max-w-3xl mx-auto"
-                style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+                className="text-lg md:text-xl font-bold text-[#d4a574] max-w-3xl mx-auto font-magic"
+                
               >
                 只需简单四步，见证你的创意变成精彩视频！
               </p>
@@ -589,8 +559,8 @@ export default function VideoCreationPage() {
                 >
                   <div className="absolute -top-4 -left-4 w-10 h-10 bg-[#d4a574] rounded-full flex items-center justify-center border-2 border-[#2d3e2d] shadow-lg">
                     <span
-                      className="text-[#2d3e2d] font-black text-xl"
-                      style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+                      className="text-[#2d3e2d] font-black text-xl font-magic"
+                      
                     >
                       1
                     </span>
@@ -598,14 +568,11 @@ export default function VideoCreationPage() {
                   <div className="text-4xl mb-4">📝</div>
                   <h3
                     className="text-xl font-black text-[#2d3e2d] mb-2"
-                    style={{
-                      fontFamily: "Fredoka One, Arial Black, sans-serif",
-                      textShadow: "1px 1px 0px #d4a574",
-                    }}
+                    
                   >
                     描述你的创意
                   </h3>
-                  <p className="text-[#8b7355] font-bold" style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}>
+                  <p className="text-[#8b7355] font-bold" >
                     输入文字描述你想要的视频场景，或上传一张图片作为起点。越详细的描述，效果越好！
                   </p>
                 </div>
@@ -622,8 +589,8 @@ export default function VideoCreationPage() {
                 >
                   <div className="absolute -top-4 -left-4 w-10 h-10 bg-[#d4a574] rounded-full flex items-center justify-center border-2 border-[#2d3e2d] shadow-lg">
                     <span
-                      className="text-[#2d3e2d] font-black text-xl"
-                      style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+                      className="text-[#2d3e2d] font-black text-xl font-magic"
+                      
                     >
                       2
                     </span>
@@ -631,14 +598,11 @@ export default function VideoCreationPage() {
                   <div className="text-4xl mb-4">🎭</div>
                   <h3
                     className="text-xl font-black text-[#2d3e2d] mb-2"
-                    style={{
-                      fontFamily: "Fredoka One, Arial Black, sans-serif",
-                      textShadow: "1px 1px 0px #d4a574",
-                    }}
+                    
                   >
                     选择视频风格
                   </h3>
-                  <p className="text-[#8b7355] font-bold" style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}>
+                  <p className="text-[#8b7355] font-bold" >
                     从多种视频风格中选择，如电影级、动漫、3D卡通、像素艺术等，定制你的视频外观。
                   </p>
                 </div>
@@ -655,8 +619,8 @@ export default function VideoCreationPage() {
                 >
                   <div className="absolute -top-4 -left-4 w-10 h-10 bg-[#d4a574] rounded-full flex items-center justify-center border-2 border-[#2d3e2d] shadow-lg">
                     <span
-                      className="text-[#2d3e2d] font-black text-xl"
-                      style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+                      className="text-[#2d3e2d] font-black text-xl font-magic"
+                      
                     >
                       3
                     </span>
@@ -664,14 +628,11 @@ export default function VideoCreationPage() {
                   <div className="text-4xl mb-4">✨</div>
                   <h3
                     className="text-xl font-black text-[#2d3e2d] mb-2"
-                    style={{
-                      fontFamily: "Fredoka One, Arial Black, sans-serif",
-                      textShadow: "1px 1px 0px #d4a574",
-                    }}
+                    
                   >
                     AI魔法处理
                   </h3>
-                  <p className="text-[#8b7355] font-bold" style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}>
+                  <p className="text-[#8b7355] font-bold" >
                     我们的AI魔法师将在几分钟内处理你的请求，生成高质量、流畅的视频内容。
                   </p>
                 </div>
@@ -688,8 +649,8 @@ export default function VideoCreationPage() {
                 >
                   <div className="absolute -top-4 -left-4 w-10 h-10 bg-[#d4a574] rounded-full flex items-center justify-center border-2 border-[#2d3e2d] shadow-lg">
                     <span
-                      className="text-[#2d3e2d] font-black text-xl"
-                      style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+                      className="text-[#2d3e2d] font-black text-xl font-magic"
+                      
                     >
                       4
                     </span>
@@ -697,14 +658,11 @@ export default function VideoCreationPage() {
                   <div className="text-4xl mb-4">🎉</div>
                   <h3
                     className="text-xl font-black text-[#2d3e2d] mb-2"
-                    style={{
-                      fontFamily: "Fredoka One, Arial Black, sans-serif",
-                      textShadow: "1px 1px 0px #d4a574",
-                    }}
+                    
                   >
                     分享你的视频
                   </h3>
-                  <p className="text-[#8b7355] font-bold" style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}>
+                  <p className="text-[#8b7355] font-bold" >
                     下载、分享你的视频创作，或继续编辑完善！让全世界看到你的魔法创意！
                   </p>
                 </div>
@@ -713,8 +671,8 @@ export default function VideoCreationPage() {
 
             <div className="text-center mt-12">
               <Button
-                className="bg-[#d4a574] hover:bg-[#c19660] text-[#2d3e2d] font-black px-8 py-4 rounded-2xl shadow-xl transform hover:scale-110 transition-all text-lg"
-                style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+                className="bg-[#d4a574] hover:bg-[#c19660] text-[#2d3e2d] font-black px-8 py-4 rounded-2xl shadow-xl transform hover:scale-110 transition-all text-lg font-magic"
+                
               >
                 <Film className="w-5 h-5 mr-2" />
                 立即创建视频！
@@ -731,10 +689,7 @@ export default function VideoCreationPage() {
         <section className="container mx-auto px-4 md:px-6 py-8 md:py-12">
           <h2
             className="text-2xl md:text-3xl font-black text-[#2d3e2d] mb-6 text-center transform -rotate-1"
-            style={{
-              fontFamily: "Fredoka One, Arial Black, sans-serif",
-              textShadow: "2px 2px 0px #d4a574",
-            }}
+            
           >
             MAGICAL VIDEO EXAMPLES ✨
           </h2>
@@ -783,8 +738,8 @@ export default function VideoCreationPage() {
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
-                    <div className="p-3 text-white">
-                      <h3 className="font-black text-lg" style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}>
+                    <div className="p-3 text-white font-magic">
+                      <h3 className="font-black text-lg" >
                         {example.title}
                       </h3>
                     </div>
@@ -796,8 +751,8 @@ export default function VideoCreationPage() {
                     <Film className="w-6 h-6" />
                   </Button>
                 </div>
-                <div className="p-3">
-                  <p className="text-[#8b7355] font-bold text-sm" style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}>
+                <div className="p-3 font-magic">
+                  <p className="text-[#8b7355] font-bold text-sm" >
                     {example.description}
                   </p>
                 </div>
@@ -807,8 +762,8 @@ export default function VideoCreationPage() {
 
           <div className="text-center mt-8">
             <Button
-              className="bg-[#2d3e2d] hover:bg-[#1a2a1a] text-[#f5f1e8] font-black px-6 py-3 rounded-2xl shadow-xl transform hover:scale-110 transition-all text-base"
-              style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+              className="bg-[#2d3e2d] hover:bg-[#1a2a1a] text-[#f5f1e8] font-black px-6 py-3 rounded-2xl shadow-xl transform hover:scale-110 transition-all text-base font-magic"
+              
             >
               <Film className="w-5 h-5 mr-2" />
               View Video Gallery
@@ -822,16 +777,13 @@ export default function VideoCreationPage() {
             <div className="text-center mb-10 md:mb-16">
               <h2
                 className="text-3xl md:text-4xl lg:text-5xl font-black text-[#2d3e2d] mb-4 transform -rotate-1"
-                style={{
-                  fontFamily: "Fredoka One, Arial Black, sans-serif",
-                  textShadow: "3px 3px 0px #d4a574",
-                }}
+                
               >
                 视频魔法师们的评价 💬
               </h2>
               <p
-                className="text-lg md:text-xl font-bold text-[#8b7355] max-w-3xl mx-auto"
-                style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+                className="text-lg md:text-xl font-bold text-[#8b7355] max-w-3xl mx-auto font-magic"
+                
               >
                 看看其他创作者如何使用AIMAGICA Video Studio创造精彩视频！
               </p>
@@ -852,7 +804,7 @@ export default function VideoCreationPage() {
                     />
                   </div>
                   <div>
-                    <h4 className="text-lg font-black text-[#2d3e2d]" style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}>
+                    <h4 className="text-lg font-black text-[#2d3e2d]" >
                       David M.
                     </h4>
                     <div className="flex text-yellow-500">
@@ -864,12 +816,12 @@ export default function VideoCreationPage() {
                     </div>
                   </div>
                 </div>
-                <p className="text-[#8b7355] font-bold mb-4" style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}>
+                <p className="text-[#8b7355] font-bold mb-4" >
                   "作为一名内容创作者，AIMAGICA Video
                   Studio彻底改变了我的工作方式！我可以快速将创意转变为精美视频，为我的社交媒体带来了更多互动和关注。"
                 </p>
-                <div className="flex justify-end">
-                  <span className="text-[#d4a574] font-bold text-sm" style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}>
+                <div className="flex justify-end font-magic">
+                  <span className="text-[#d4a574] font-bold text-sm" >
                     内容创作者
                   </span>
                 </div>
@@ -889,7 +841,7 @@ export default function VideoCreationPage() {
                     />
                   </div>
                   <div>
-                    <h4 className="text-lg font-black text-[#2d3e2d]" style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}>
+                    <h4 className="text-lg font-black text-[#2d3e2d]" >
                       Emma L.
                     </h4>
                     <div className="flex text-yellow-500">
@@ -901,12 +853,12 @@ export default function VideoCreationPage() {
                     </div>
                   </div>
                 </div>
-                <p className="text-[#8b7355] font-bold mb-4" style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}>
+                <p className="text-[#8b7355] font-bold mb-4" >
                   "我们的营销团队使用AIMAGICA Video
                   Studio创建产品演示和社交媒体内容。它不仅节省了我们的时间和预算，还提高了我们内容的质量和吸引力。绝对是营销人员的必备工具！"
                 </p>
-                <div className="flex justify-end">
-                  <span className="text-[#d4a574] font-bold text-sm" style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}>
+                <div className="flex justify-end font-magic">
+                  <span className="text-[#d4a574] font-bold text-sm" >
                     营销经理
                   </span>
                 </div>
@@ -926,7 +878,7 @@ export default function VideoCreationPage() {
                     />
                   </div>
                   <div>
-                    <h4 className="text-lg font-black text-[#2d3e2d]" style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}>
+                    <h4 className="text-lg font-black text-[#2d3e2d]" >
                       Alex K.
                     </h4>
                     <div className="flex text-yellow-500">
@@ -938,12 +890,12 @@ export default function VideoCreationPage() {
                     </div>
                   </div>
                 </div>
-                <p className="text-[#8b7355] font-bold mb-4" style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}>
+                <p className="text-[#8b7355] font-bold mb-4" >
                   "作为一名学生，我用AIMAGICA Video
                   Studio为我的课程项目创建视频。即使没有任何视频制作经验，我也能创建出专业水准的动画和演示。老师和同学们都被惊艳到了！"
                 </p>
-                <div className="flex justify-end">
-                  <span className="text-[#d4a574] font-bold text-sm" style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}>
+                <div className="flex justify-end font-magic">
+                  <span className="text-[#d4a574] font-bold text-sm" >
                     大学生
                   </span>
                 </div>
@@ -952,8 +904,8 @@ export default function VideoCreationPage() {
 
             <div className="text-center mt-10">
               <div className="inline-flex items-center bg-[#2d3e2d] rounded-full px-6 py-3 shadow-lg">
-                <Users className="w-5 h-5 text-[#d4a574] mr-2" />
-                <span className="text-[#f5f1e8] font-black" style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}>
+                <Users className="w-5 h-5 text-[#d4a574] mr-2 font-magic" />
+                <span className="text-[#f5f1e8] font-black" >
                   已有超过50万用户使用AIMAGICA Video Studio创造魔法视频！
                 </span>
               </div>
@@ -971,16 +923,13 @@ export default function VideoCreationPage() {
             <div className="text-center mb-10 md:mb-16">
               <h2
                 className="text-3xl md:text-4xl lg:text-5xl font-black text-[#f5f1e8] mb-4 transform rotate-1"
-                style={{
-                  fontFamily: "Fredoka One, Arial Black, sans-serif",
-                  textShadow: "3px 3px 0px #8b7355",
-                }}
+                
               >
                 常见问题 🤔
               </h2>
               <p
-                className="text-lg md:text-xl font-bold text-[#d4a574] max-w-3xl mx-auto"
-                style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+                className="text-lg md:text-xl font-bold text-[#d4a574] max-w-3xl mx-auto font-magic"
+                
               >
                 关于AIMAGICA Video Studio的一切，你想知道的都在这里！
               </p>
@@ -993,13 +942,13 @@ export default function VideoCreationPage() {
                   className="bg-[#f5f1e8] rounded-2xl border-4 border-[#8b7355] shadow-xl overflow-hidden"
                 >
                   <AccordionTrigger
-                    className="px-6 py-4 hover:no-underline"
-                    style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+                    className="px-6 py-4 hover:no-underline font-magic"
+                    
                   >
                     <span className="font-black text-[#2d3e2d] text-left">我需要具备视频制作技能才能使用吗？</span>
                   </AccordionTrigger>
-                  <AccordionContent className="px-6 pb-4">
-                    <p className="text-[#8b7355] font-bold" style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}>
+                  <AccordionContent className="px-6 pb-4 font-magic">
+                    <p className="text-[#8b7355] font-bold" >
                       完全不需要！AIMAGICA Video
                       Studio专为所有人设计，无论你是专业创作者还是完全没有视频制作经验的初学者。只需描述你的创意或上传图片，AI魔法将完成剩下的工作！
                     </p>
@@ -1011,13 +960,13 @@ export default function VideoCreationPage() {
                   className="bg-[#f5f1e8] rounded-2xl border-4 border-[#8b7355] shadow-xl overflow-hidden"
                 >
                   <AccordionTrigger
-                    className="px-6 py-4 hover:no-underline"
-                    style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+                    className="px-6 py-4 hover:no-underline font-magic"
+                    
                   >
                     <span className="font-black text-[#2d3e2d] text-left">生成一个视频需要多长时间？</span>
                   </AccordionTrigger>
-                  <AccordionContent className="px-6 pb-4">
-                    <p className="text-[#8b7355] font-bold" style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}>
+                  <AccordionContent className="px-6 pb-4 font-magic">
+                    <p className="text-[#8b7355] font-bold" >
                       视频生成时间取决于视频的长度和复杂度，通常在2-5分钟内完成。我们的AI技术不断优化，致力于提供最快的视频生成体验！
                     </p>
                   </AccordionContent>
@@ -1028,13 +977,13 @@ export default function VideoCreationPage() {
                   className="bg-[#f5f1e8] rounded-2xl border-4 border-[#8b7355] shadow-xl overflow-hidden"
                 >
                   <AccordionTrigger
-                    className="px-6 py-4 hover:no-underline"
-                    style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+                    className="px-6 py-4 hover:no-underline font-magic"
+                    
                   >
                     <span className="font-black text-[#2d3e2d] text-left">我可以商用我创建的视频吗？</span>
                   </AccordionTrigger>
-                  <AccordionContent className="px-6 pb-4">
-                    <p className="text-[#8b7355] font-bold" style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}>
+                  <AccordionContent className="px-6 pb-4 font-magic">
+                    <p className="text-[#8b7355] font-bold" >
                       当然可以！你创建的所有视频都属于你，可以自由用于个人或商业用途。无论是社交媒体内容、营销材料还是教育资源，都没有限制！
                     </p>
                   </AccordionContent>
@@ -1045,13 +994,13 @@ export default function VideoCreationPage() {
                   className="bg-[#f5f1e8] rounded-2xl border-4 border-[#8b7355] shadow-xl overflow-hidden"
                 >
                   <AccordionTrigger
-                    className="px-6 py-4 hover:no-underline"
-                    style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+                    className="px-6 py-4 hover:no-underline font-magic"
+                    
                   >
                     <span className="font-black text-[#2d3e2d] text-left">免费版和PRO版有什么区别？</span>
                   </AccordionTrigger>
-                  <AccordionContent className="px-6 pb-4">
-                    <p className="text-[#8b7355] font-bold" style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}>
+                  <AccordionContent className="px-6 pb-4 font-magic">
+                    <p className="text-[#8b7355] font-bold" >
                       免费版每天提供3次视频创作机会，标准分辨率下载。PRO版提供每天无限创作、超高清视频下载、更长的视频时长、独家视频风格，以及优先处理速度！
                     </p>
                   </AccordionContent>
@@ -1062,13 +1011,13 @@ export default function VideoCreationPage() {
                   className="bg-[#f5f1e8] rounded-2xl border-4 border-[#8b7355] shadow-xl overflow-hidden"
                 >
                   <AccordionTrigger
-                    className="px-6 py-4 hover:no-underline"
-                    style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+                    className="px-6 py-4 hover:no-underline font-magic"
+                    
                   >
                     <span className="font-black text-[#2d3e2d] text-left">我可以编辑生成的视频吗？</span>
                   </AccordionTrigger>
-                  <AccordionContent className="px-6 pb-4">
-                    <p className="text-[#8b7355] font-bold" style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}>
+                  <AccordionContent className="px-6 pb-4 font-magic">
+                    <p className="text-[#8b7355] font-bold" >
                       是的！生成视频后，你可以下载并使用任何视频编辑软件进行进一步编辑。我们也计划在未来添加内置的视频编辑功能，敬请期待！
                     </p>
                   </AccordionContent>

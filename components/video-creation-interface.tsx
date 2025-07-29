@@ -122,14 +122,11 @@ export default function VideoCreationInterface({ onStartRender }: VideoCreationI
         <div className="absolute -bottom-1 -left-1 md:-bottom-2 md:-left-2 w-3 h-3 md:w-6 md:h-6 bg-[#8b7355] rounded-full"></div>
         <h2
           className="text-xl md:text-3xl font-black text-[#f5f1e8] mb-2 transform -rotate-1"
-          style={{
-            fontFamily: "Fredoka One, Arial Black, sans-serif",
-            textShadow: "2px 2px 0px #8b7355",
-          }}
+          
         >
           CREATE YOUR MAGIC VIDEO! 🎬
         </h2>
-        <p className="text-[#f5f1e8] font-bold text-sm md:text-base" style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}>
+        <p className="text-[#f5f1e8] font-bold text-sm md:text-base" >
           Turn your imagination into amazing videos with AI magic! ✨
         </p>
       </div>
@@ -156,14 +153,14 @@ export default function VideoCreationInterface({ onStartRender }: VideoCreationI
                   <span className="ml-1 text-lg">{mode.emoji}</span>
                 </div>
                 <span
-                  className="font-black text-xs md:text-sm text-center leading-tight"
-                  style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+                  className="font-black text-xs md:text-sm text-center leading-tight font-magic"
+                  
                 >
                   {mode.name}
                 </span>
                 <span
-                  className="text-xs text-center mt-1 opacity-75 hidden md:block"
-                  style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+                  className="text-xs text-center mt-1 opacity-75 hidden md:block font-magic"
+                  
                 >
                   {mode.description}
                 </span>
@@ -178,12 +175,12 @@ export default function VideoCreationInterface({ onStartRender }: VideoCreationI
             <div className="space-y-4">
               <div className="bg-[#f5f1e8] rounded-xl p-4 border-2 border-[#8b7355]">
                 <div className="flex items-center mb-3">
-                  <Film className="w-5 h-5 text-[#2d3e2d] mr-2" />
-                  <h3 className="font-black text-[#2d3e2d]" style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}>
+                  <Film className="w-5 h-5 text-[#2d3e2d] mr-2 font-magic" />
+                  <h3 className="font-black text-[#2d3e2d]" >
                     Text to Video Magic! 📝✨
                   </h3>
                 </div>
-                <p className="text-[#8b7355] font-bold text-sm mb-4" style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}>
+                <p className="text-[#8b7355] font-bold text-sm mb-4" >
                   Describe your video idea and watch AI bring it to life!
                 </p>
                 <Textarea
@@ -201,12 +198,12 @@ export default function VideoCreationInterface({ onStartRender }: VideoCreationI
             <div className="space-y-4">
               <div className="bg-[#f5f1e8] rounded-xl p-4 border-2 border-[#8b7355]">
                 <div className="flex items-center mb-3">
-                  <ImageIcon className="w-5 h-5 text-[#2d3e2d] mr-2" />
-                  <h3 className="font-black text-[#2d3e2d]" style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}>
+                  <ImageIcon className="w-5 h-5 text-[#2d3e2d] mr-2 font-magic" />
+                  <h3 className="font-black text-[#2d3e2d]" >
                     Image to Video Magic! 🖼️✨
                   </h3>
                 </div>
-                <p className="text-[#8b7355] font-bold text-sm mb-4" style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}>
+                <p className="text-[#8b7355] font-bold text-sm mb-4" >
                   Upload an image and describe how it should animate!
                 </p>
 
@@ -229,8 +226,8 @@ export default function VideoCreationInterface({ onStartRender }: VideoCreationI
                     </div>
                   ) : (
                     <div className="flex flex-col items-center justify-center py-4">
-                      <Upload className="w-8 h-8 text-[#8b7355] mb-2" />
-                      <p className="text-[#8b7355] font-bold text-sm" style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}>
+                      <Upload className="w-8 h-8 text-[#8b7355] mb-2 font-magic" />
+                      <p className="text-[#8b7355] font-bold text-sm" >
                         Click to upload or drag and drop
                       </p>
                       <Input
@@ -267,22 +264,22 @@ export default function VideoCreationInterface({ onStartRender }: VideoCreationI
             <div className="space-y-4">
               <div className="bg-[#f5f1e8] rounded-xl p-4 border-2 border-[#8b7355]">
                 <div className="flex items-center mb-3">
-                  <PenTool className="w-5 h-5 text-[#2d3e2d] mr-2" />
-                  <h3 className="font-black text-[#2d3e2d]" style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}>
+                  <PenTool className="w-5 h-5 text-[#2d3e2d] mr-2 font-magic" />
+                  <h3 className="font-black text-[#2d3e2d]" >
                     Sketch to Video Magic! ✏️✨
                   </h3>
                 </div>
-                <p className="text-[#8b7355] font-bold text-sm mb-4" style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}>
+                <p className="text-[#8b7355] font-bold text-sm mb-4" >
                   Draw your idea and watch it come to life in motion!
                 </p>
 
                 <div className="border-2 border-dashed border-[#8b7355] rounded-xl p-4 text-center mb-4 bg-white min-h-[200px] flex items-center justify-center">
                   <div className="text-center">
-                    <PenTool className="w-12 h-12 text-[#8b7355] mx-auto mb-3" />
-                    <p className="text-[#8b7355] font-bold text-sm" style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}>
+                    <PenTool className="w-12 h-12 text-[#8b7355] mx-auto mb-3 font-magic" />
+                    <p className="text-[#8b7355] font-bold text-sm" >
                       Drawing Canvas Coming Soon! 🎨
                     </p>
-                    <p className="text-[#8b7355] text-xs mt-2" style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}>
+                    <p className="text-[#8b7355] text-xs mt-2" >
                       Draw directly here to create animated videos
                     </p>
                   </div>
@@ -303,12 +300,12 @@ export default function VideoCreationInterface({ onStartRender }: VideoCreationI
             <div className="space-y-4">
               <div className="bg-[#f5f1e8] rounded-xl p-4 border-2 border-[#8b7355]">
                 <div className="flex items-center mb-3">
-                  <Palette className="w-5 h-5 text-[#2d3e2d] mr-2" />
-                  <h3 className="font-black text-[#2d3e2d]" style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}>
+                  <Palette className="w-5 h-5 text-[#2d3e2d] mr-2 font-magic" />
+                  <h3 className="font-black text-[#2d3e2d]" >
                     Style Transfer Magic! 🎭✨
                   </h3>
                 </div>
-                <p className="text-[#8b7355] font-bold text-sm mb-4" style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}>
+                <p className="text-[#8b7355] font-bold text-sm mb-4" >
                   Upload a video and apply amazing artistic styles!
                 </p>
 
@@ -327,8 +324,8 @@ export default function VideoCreationInterface({ onStartRender }: VideoCreationI
                     </div>
                   ) : (
                     <div className="flex flex-col items-center justify-center py-4">
-                      <Video className="w-8 h-8 text-[#8b7355] mb-2" />
-                      <p className="text-[#8b7355] font-bold text-sm" style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}>
+                      <Video className="w-8 h-8 text-[#8b7355] mb-2 font-magic" />
+                      <p className="text-[#8b7355] font-bold text-sm" >
                         Upload your video file
                       </p>
                       <Input
@@ -364,8 +361,8 @@ export default function VideoCreationInterface({ onStartRender }: VideoCreationI
           <div className="space-y-4">
             <div>
               <Label
-                className="text-[#2d3e2d] font-bold text-sm md:text-base"
-                style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+                className="text-[#2d3e2d] font-bold text-sm md:text-base font-magic"
+                
               >
                 Choose video style 🎨
               </Label>
@@ -380,8 +377,8 @@ export default function VideoCreationInterface({ onStartRender }: VideoCreationI
                     } rounded-xl text-[#2d3e2d] hover:bg-[#d4a574]/20 hover:border-[#d4a574] transition-all`}
                     onClick={() => setSelectedStyle(style.id)}
                   >
-                    <span className="text-xl mb-1">{style.icon}</span>
-                    <span className="font-bold text-xs md:text-sm" style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}>
+                    <span className="text-xl mb-1 font-magic">{style.icon}</span>
+                    <span className="font-bold text-xs md:text-sm" >
                       {style.name}
                     </span>
                     <span className="text-xs text-[#8b7355] mt-1 hidden md:block">{style.description}</span>
@@ -394,12 +391,12 @@ export default function VideoCreationInterface({ onStartRender }: VideoCreationI
               <div className="flex justify-between items-center">
                 <Label
                   htmlFor="duration"
-                  className="text-[#2d3e2d] font-bold text-sm md:text-base"
-                  style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+                  className="text-[#2d3e2d] font-bold text-sm md:text-base font-magic"
+                  
                 >
                   Video duration 🕒
                 </Label>
-                <span className="text-[#8b7355] font-bold text-sm" style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}>
+                <span className="text-[#8b7355] font-bold text-sm" >
                   {duration} seconds
                 </span>
               </div>
@@ -426,8 +423,8 @@ export default function VideoCreationInterface({ onStartRender }: VideoCreationI
                   (creationMode === "image-to-video" && !uploadedImage) ||
                   (creationMode === "style-transfer" && !uploadedVideo)
                 }
-                className="w-full bg-[#4a5a4a] hover:bg-[#5a6a5a] text-[#f5f1e8] font-black py-3 rounded-xl md:rounded-2xl shadow-xl transform hover:scale-105 transition-all text-base"
-                style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+                className="w-full bg-[#4a5a4a] hover:bg-[#5a6a5a] text-[#f5f1e8] font-black py-3 rounded-xl md:rounded-2xl shadow-xl transform hover:scale-105 transition-all text-base font-magic"
+                
               >
                 <Wand2 className="w-5 h-5 mr-2" />
                 CREATE MAGIC VIDEO! ✨

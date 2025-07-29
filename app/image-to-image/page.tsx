@@ -30,10 +30,7 @@ export default function ImageToImagePage() {
               <div>
                 <h1
                   className="text-xl font-black text-[#2d3e2d]"
-                  style={{
-                    fontFamily: "Fredoka One, Arial Black, sans-serif",
-                    textShadow: "2px 2px 0px #d4a574",
-                  }}
+                  
                 >
                   AIMAGICA
                 </h1>
@@ -71,16 +68,13 @@ export default function ImageToImagePage() {
         <div className="text-center mb-8">
           <h1
             className="text-4xl md:text-6xl font-black text-[#2d3e2d] mb-4 transform -rotate-1"
-            style={{
-              fontFamily: "Fredoka One, Arial Black, sans-serif",
-              textShadow: "3px 3px 0px #d4a574",
-            }}
+            
           >
             IMAGE TO IMAGE AI 🖼️
           </h1>
           <p
-            className="text-xl md:text-2xl font-bold text-[#8b7355] max-w-4xl mx-auto mb-6"
-            style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}
+            className="text-xl md:text-2xl font-bold text-[#8b7355] max-w-4xl mx-auto mb-6 font-magic"
+            
           >
             Upload your photos and transform them into stunning AI artworks! Advanced image-to-image technology that enhances and stylizes your images in seconds.
           </p>
@@ -105,8 +99,8 @@ export default function ImageToImagePage() {
 
       {/* 功能导航区域 */}
       <section className="container mx-auto px-4 py-8">
-        <div className="text-center mb-6">
-          <h2 className="text-2xl font-black text-[#2d3e2d] mb-2" style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}>
+        <div className="text-center mb-6 font-magic">
+          <h2 className="text-2xl font-black text-[#2d3e2d] mb-2" >
             Try Other AI Features! 🚀
           </h2>
         </div>
@@ -114,24 +108,24 @@ export default function ImageToImagePage() {
         <div className="grid md:grid-cols-3 gap-4 max-w-4xl mx-auto">
           <Link href="/text-to-image" className="block">
             <div className="bg-white border-2 border-[#8b7355] rounded-xl p-4 transform hover:scale-105 transition-all text-center">
-              <div className="text-3xl mb-2">📝</div>
-              <h3 className="font-black text-[#2d3e2d] text-sm" style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}>
+              <div className="text-3xl mb-2 font-magic">📝</div>
+              <h3 className="font-black text-[#2d3e2d] text-sm" >
                 Text to Image
               </h3>
             </div>
           </Link>
           <Link href="/text-to-video" className="block">
             <div className="bg-white border-2 border-[#8b7355] rounded-xl p-4 transform hover:scale-105 transition-all text-center">
-              <div className="text-3xl mb-2">🎬</div>
-              <h3 className="font-black text-[#2d3e2d] text-sm" style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}>
+              <div className="text-3xl mb-2 font-magic">🎬</div>
+              <h3 className="font-black text-[#2d3e2d] text-sm" >
                 Text to Video
               </h3>
             </div>
           </Link>
           <Link href="/image-to-video" className="block">
             <div className="bg-white border-2 border-[#8b7355] rounded-xl p-4 transform hover:scale-105 transition-all text-center">
-              <div className="text-3xl mb-2">🎥</div>
-              <h3 className="font-black text-[#2d3e2d] text-sm" style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}>
+              <div className="text-3xl mb-2 font-magic">🎥</div>
+              <h3 className="font-black text-[#2d3e2d] text-sm" >
                 Image to Video
               </h3>
             </div>
@@ -145,10 +139,7 @@ export default function ImageToImagePage() {
           <div className="bg-[#2d3e2d] p-4 text-center">
             <h2
               className="text-2xl font-black text-[#f5f1e8] flex items-center justify-center gap-3"
-              style={{
-                fontFamily: "Fredoka One, Arial Black, sans-serif",
-                textShadow: "2px 2px 0px #8b7355",
-              }}
+              
             >
               <ImageIcon className="w-6 h-6" />
               Transform Your Images
@@ -172,15 +163,15 @@ export default function ImageToImagePage() {
 
       {/* SEO Content Section */}
       <section className="container mx-auto px-4 py-12">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-black text-[#2d3e2d] mb-6 text-center" style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}>
+        <div className="max-w-4xl mx-auto font-magic">
+          <h2 className="text-3xl font-black text-[#2d3e2d] mb-6 text-center" >
             How Image to Image AI Works
           </h2>
           
           <div className="grid md:grid-cols-3 gap-6 mb-8">
             <div className="text-center p-6 bg-white rounded-xl border-2 border-[#8b7355]">
-              <div className="text-4xl mb-3">📤</div>
-              <h3 className="font-black text-[#2d3e2d] mb-2" style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}>
+              <div className="text-4xl mb-3 font-magic">📤</div>
+              <h3 className="font-black text-[#2d3e2d] mb-2" >
                 Upload Your Image
               </h3>
               <p className="text-[#8b7355] font-bold text-sm">
@@ -189,8 +180,8 @@ export default function ImageToImagePage() {
             </div>
             
             <div className="text-center p-6 bg-white rounded-xl border-2 border-[#8b7355]">
-              <div className="text-4xl mb-3">🎨</div>
-              <h3 className="font-black text-[#2d3e2d] mb-2" style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}>
+              <div className="text-4xl mb-3 font-magic">🎨</div>
+              <h3 className="font-black text-[#2d3e2d] mb-2" >
                 Select Art Style
               </h3>
               <p className="text-[#8b7355] font-bold text-sm">
@@ -199,8 +190,8 @@ export default function ImageToImagePage() {
             </div>
             
             <div className="text-center p-6 bg-white rounded-xl border-2 border-[#8b7355]">
-              <div className="text-4xl mb-3">✨</div>
-              <h3 className="font-black text-[#2d3e2d] mb-2" style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}>
+              <div className="text-4xl mb-3 font-magic">✨</div>
+              <h3 className="font-black text-[#2d3e2d] mb-2" >
                 Get Enhanced Image
               </h3>
               <p className="text-[#8b7355] font-bold text-sm">
@@ -209,8 +200,8 @@ export default function ImageToImagePage() {
             </div>
           </div>
 
-          <div className="prose prose-lg mx-auto">
-            <h3 className="text-2xl font-black text-[#2d3e2d]" style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}>
+          <div className="prose prose-lg mx-auto font-magic">
+            <h3 className="text-2xl font-black text-[#2d3e2d]" >
               Transform Any Image with AI
             </h3>
             <p className="text-[#8b7355] font-bold">
@@ -219,7 +210,7 @@ export default function ImageToImagePage() {
               our AI can handle it all in just seconds.
             </p>
             
-            <h3 className="text-2xl font-black text-[#2d3e2d]" style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}>
+            <h3 className="text-2xl font-black text-[#2d3e2d]" >
               Perfect for Image Enhancement
             </h3>
             <ul className="text-[#8b7355] font-bold">

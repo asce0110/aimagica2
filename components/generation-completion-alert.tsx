@@ -110,13 +110,13 @@ export default function GenerationCompletionAlert({
           </div>
           
           <div className="flex-1">
-            <div className="flex items-center gap-2 mb-1">
-              <h3 className="font-bold text-lg" style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}>
+            <div className="flex items-center gap-2 mb-1 font-magic">
+              <h3 className="font-bold text-lg" >
                 🎉 生成完成！
               </h3>
               <Volume2 className="w-4 h-4 text-white/80" />
             </div>
-            <p className="text-sm text-white/90" style={{ fontFamily: "Fredoka One, Arial Black, sans-serif" }}>
+            <p className="text-sm text-white/90" >
               您的AI艺术作品已经创作完成！
             </p>
           </div>
